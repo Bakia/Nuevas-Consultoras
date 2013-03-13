@@ -28,6 +28,46 @@
 <script>
 	$(function() {
 		//$( ".secciones div" ).draggable({});
+
+        function IniciarObjetivosModulo () {
+            
+            var intentosModulo = LMSGetValue("cmi.objectives.2.id");
+            //alert(intentosScorm);
+            var estrellasModulo = LMSGetValue("cmi.objectives.3.id");
+            
+            alert(intentosModulo);
+            alert(estrellasModulo);
+        
+            var get_intentosModulo_score;
+            var get_estrellasModulo_score;
+            
+            if (intentosModulo != "intentosModulo-2" ) {
+                alert("No Existe el objetivo;");
+                var set_intentosModulo = LMSSetValue("cmi.objectives.2.id", "intentosModulo-2");
+                var set_estrellasModulo = LMSSetValue("cmi.objectives.3.id", "estrellasModulo-2");
+                
+                var set_intentosModulo_score = LMSSetValue("cmi.objectives.2.score.raw", 0);
+                get_intentosModulo_score = LMSGetValue("cmi.objectives.2.score.raw");
+                
+                var set_estrellasModulo_score = LMSSetValue("cmi.objectives.3.score.raw", 0);
+                get_estrellasModulo_score = LMSGetValue("cmi.objectives.3.score.raw");
+                
+                alert("Intentos: " + get_intentosModulo_score); 
+                alert("Estrellas: " + get_estrellasModulo_score);                   
+            } else {
+                get_intentosModulo_score = LMSGetValue("cmi.objectives.2.score.raw");
+                get_estrellasModulo_score = LMSGetValue("cmi.objectives.3.score.raw");
+                alert("Ya haz completado este modulo " + get_intentosModulo_score + " veces.\nTienes un total de " + get_estrellasModulo_score + " estrellas.");            
+            };
+            var n_error = LMSGetLastError("");
+            alert("Error: "+n_error);
+            
+            LMSCommit("");
+
+        }
+
+        IniciarObjetivosModulo();       
+
 		
 	});
 </script>

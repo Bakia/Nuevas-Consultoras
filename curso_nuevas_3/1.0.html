@@ -28,22 +28,11 @@
 <script>
 	$(function() {
 		//$( ".secciones div" ).draggable({});
-		//IniciarObjetivosModulo ("1");
-			var set_intentosModulo1 = LMSSetValue("cmi.objectives.0.id", "intentosModulo-1");
-			var set_intentosModulo2 = LMSSetValue("cmi.objectives.1.id", "intentosModulo-1");
-			var set_intentosModulo3 = LMSSetValue("cmi.objectives.2.id", "intentosModulo-1");
-			var set_intentosModulo4 = LMSSetValue("cmi.objectives.3.id", "intentosModulo-1");
-			//var set_intentosModulo5 = LMSSetValue("cmi.objectives.4.id", "intentosModulo-1");
-			var set_intentosModulo6 = LMSSetValue("cmi.objectives.5.id", "intentosModulo-1");
-			var set_intentosModulo7 = LMSSetValue("cmi.objectives.6.id", "intentosModulo-1");
-			var set_intentosModulo8 = LMSSetValue("cmi.objectives.7.id", "intentosModulo-1");
-			var set_intentosModulo9 = LMSSetValue("cmi.objectives.8.id", "intentosModulo-1");
-			var set_intentosModulo10 = LMSSetValue("cmi.objectives.9.id", "intentosModulo-1");
+		function IniciarObjetivosModulo () {
 			
-		
-			var intentosModulo = LMSGetValue("cmi.objectives.10.id");
+			var intentosModulo = LMSGetValue("cmi.objectives.0.id");
 			//alert(intentosScorm);
-			var estrellasModulo = LMSGetValue("cmi.objectives.11.id");
+			var estrellasModulo = LMSGetValue("cmi.objectives.1.id");
 			
 			alert(intentosModulo);
 			alert(estrellasModulo);
@@ -53,26 +42,30 @@
 			
 			if (intentosModulo != "intentosModulo-1" ) {
 				alert("No Existe el objetivo;");
-				var set_intentosModulo = LMSSetValue("cmi.objectives.10.id", "intentosModulo-1");
-				var set_estrellasModulo = LMSSetValue("cmi.objectives.11.id", "estrellasModulo-1");
+				var set_intentosModulo = LMSSetValue("cmi.objectives.0.id", "intentosModulo-1");
+				var set_estrellasModulo = LMSSetValue("cmi.objectives.1.id", "estrellasModulo-1");
 				
-				var set_intentosModulo_score = LMSSetValue("cmi.objectives.10.score.raw", 0);
-				get_intentosModulo_score = LMSGetValue("cmi.objectives.10.score.raw");
+				var set_intentosModulo_score = LMSSetValue("cmi.objectives.0.score.raw", 0);
+				get_intentosModulo_score = LMSGetValue("cmi.objectives.0.score.raw");
 				
-				var set_estrellasModulo_score = LMSSetValue("cmi.objectives.11.score.raw", 0);
-				get_estrellasModulo_score = LMSGetValue("cmi.objectives.11.score.raw");
+				var set_estrellasModulo_score = LMSSetValue("cmi.objectives.1.score.raw", 0);
+				get_estrellasModulo_score = LMSGetValue("cmi.objectives.1.score.raw");
 				
 				alert("Intentos: " + get_intentosModulo_score);	
 				alert("Estrellas: " + get_estrellasModulo_score);					
 			} else {
-				get_intentosModulo_score = LMSGetValue("cmi.objectives.10.score.raw");
-				get_estrellasModulo_score = LMSGetValue("cmi.objectives.11.score.raw");
+				get_intentosModulo_score = LMSGetValue("cmi.objectives.0.score.raw");
+				get_estrellasModulo_score = LMSGetValue("cmi.objectives.1.score.raw");
 				alert("Ya haz completado este modulo " + get_intentosModulo_score + " veces.\nTienes un total de " + get_estrellasModulo_score + " estrellas.");			
 			};
 			var n_error = LMSGetLastError("");
 			alert("Error: "+n_error);
 			
 			LMSCommit("");
+
+		}
+
+		IniciarObjetivosModulo();					
 		
 	});
 </script>
