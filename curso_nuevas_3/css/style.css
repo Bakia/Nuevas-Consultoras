@@ -1,0 +1,1025 @@
+@font-face{
+	font-family: 'Englebert';
+	src: url(../fonts/Englebert-Regular_0.ttf);
+}
+@font-face{
+	font-family: 'Museo Sans 100';
+	src: url(../fonts/MuseoSans_100.otf);
+	font-weight: 100;
+}
+@font-face{
+	font-family: 'Museo Sans 300';
+	src: url(../fonts/MuseoSans_300.otf);
+	font-weight: 300;
+}
+@font-face{
+	font-family: 'Museo Sans 500';
+	src: url(../fonts/MuseoSans_500.otf);
+	font-weight: 500;
+}
+@font-face{
+	
+	font-family: 'Museo Sans 700' , Arial , sans-serif;
+	src: url('../fonts/MuseoSans_700.otf');
+	src: url('../fonts/museosans_700-webfont.eot');
+    src: url('../fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans_700-webfont.woff') format('woff'),
+         url('../fonts/museosans_700-webfont.ttf') format('truetype');
+         /*url('../fonts/museosans_700-webfont.svg#museo_sans700') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+	font-weight: 700;
+}
+@font-face{
+	font-family: 'Museo Sans 900';
+	src: url(../fonts/MuseoSans_900.otf);
+	font-weight: 900;
+}
+@font-face{
+	font-family: 'Rancho';
+	src: url(../fonts/Rancho-Regular.ttf);
+}
+@font-face{
+	font-family: 'Digital';
+	src: url('../fonts/gddigit13led.otf');
+	src: url('../fonts/gddigit13led-webfont.eot');
+    src: url('../fonts/gddigit13led-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gddigit13led-webfont.woff') format('woff'),
+         url('../fonts/gddigit13led-webfont.ttf') format('truetype');
+        /* url('gddigit13led-webfont.svg#gd-digit13led-otfregular') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+
+
+/*
+ACA VAN TODOS LOS ESTILOS ESPECIFICOS DE UN CURSO
+*/
+
+/*
+ACA VAN LOS ESTILOS DE LAS EXTRELLAS
+*/
+
+.estrellas-acumuladas{
+	color: #FFB718;
+	font-family: 'Arial';
+	font-size: 6.4em;
+	font-weight: bold;
+	left: 320px;
+	position: absolute;
+	text-align: right;
+	top: 424px;
+	width: 100px;
+}
+
+
+.texto-felicitacion {
+	color: white;
+	font-family: 'Museo Sans 700', Arial, sans-serif;
+	font-size: 22px;
+	width: 340px;
+}
+
+
+/*INICIO ESTILOS MODULO 1*/
+
+.opcion-sueno{
+	display:none;
+}
+
+
+body{
+	overflow: visible !important;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+img{
+	position: absolute;
+}
+
+
+input[type="text"] {
+	background-image:url(../img/bg_input.png);
+	background-repeat:repeat;
+	border: none;
+	background-attachment: scroll; 
+	background-repeat: repeat; 
+	background-position-x: 0%; 
+	background-position-y: 0%; 
+	background-color: transparent;
+}
+input[type="text"]:focus{
+	outline: none;
+}
+
+#barra-perfil{
+	left: 1px;
+	opacity: 0;
+	position: absolute;
+	top: -70px;
+	z-index: 100;
+}
+
+#cifra-meta{
+	background-color: transparent;
+	border: none;
+	color: #5f1870 ;
+	font-family: 'Digital';
+	font-size: 65px;
+	left: 8px;
+	line-height: 65px;
+	max-width: 350px;
+	position: absolute;
+	text-align: center;
+	top: 30px;
+	height: 120px;
+}
+
+#imagina-meta .otro input{
+	color: #5f1870;
+	font-family: arial;
+	font-size: 18px;
+	left: 9px;
+	position: absolute;
+	top: 13px;
+	width: 200px;
+}
+
+#pedido-campana{
+	color: #5f1870;
+	left: 10px;
+	font-family: 'digital';
+	font-size: 60px;
+	position: absolute;
+	text-align: center;
+	top: 110px;
+	width: 348px;
+}
+
+#textos-perfil{
+	left: 60px;
+	position: relative;
+	top: 19px;
+}
+
+
+.boton{
+	cursor: pointer;
+}
+
+
+.bandera {
+
+	height: 50px;
+	position: absolute;
+	top: 0;
+	vertical-align: top;
+	width: 50px;
+}
+.banderas {
+	top: 240px;
+	left: 345px;
+	position: absolute;
+	width: 270px;
+}
+
+.nombre-consultora{
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 30px;
+	left: 430px;
+	position: relative;
+	top: 250px;
+	text-transform:capitalize;
+}
+
+.mi-meta-es{
+	color: #ffffff;
+	font-family: 'Museo Sans 700';
+	font-size: 25px;
+	left: 430px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 330px;
+	width: 400px;
+}
+
+.video-container{
+	height: 396px;
+	left: 106px;
+	top: 73px;
+	width: 746px;
+}
+
+/*FIN ESTILOS MODULO 1*/
+
+
+
+/*INICIO ESTILOS MODULO 2 */
+	
+.Izquierda_interna , .derecha_interna{
+	cursor:pointer;
+}
+
+
+
+.btnEditarLinea{
+	left: 825px;
+	cursor:pointer;
+	width:28px;
+	height:28px;
+}
+
+.btnEditarLinea > img{
+	position:absolute;
+}
+
+.btnGuardaListaFamilia{
+	width:153px;
+	height:74px;
+}
+
+.btnGuardaListaFamilia > img{
+	position:absolute;
+}
+
+
+
+.btnVerListaComp{
+	width:174px;
+	height:43px;
+}
+
+.btnVerListaComp > img{
+	position:absolute;
+}
+
+
+
+
+.btnEnviaCorreo{
+	width:154px;
+	height:43px;
+}
+
+.btnEnviaCorreo > img{
+	position:absolute;
+}
+
+
+
+.btnFacebook{
+	width:37px;
+	height:37px;
+}
+
+.btnFacebook img{
+	position:absolute;
+}
+
+
+
+.btn_enviar_correo, .btn_enviar_correo_cal{
+	width:124px;
+	height:36px;
+}
+
+.btn_enviar_correo > img, .btn_enviar_correo_cal >img{
+	position:absolute;
+}
+
+.txtFamiliaNomListComp , .txtAmigosNomListComp , .txtVecinosNomListComp{
+	background-image:url(../img/02/fondo_caja_txt.png);
+	left:0px;
+	position:absolute;
+	font-size:10px;
+	width:135px;
+}
+
+.txtFamiliaApeListComp, .txtAmigosApeListComp , .txtVecinosApeListComp{
+	background-image:url(../img/02/fondo_caja_txt.png);
+	left:160px;
+	position:absolute;
+	font-size:10px;
+	width:135px;
+}
+
+.txtFamiliaTelListComp , .txtAmigosTelListComp , .txtVecinosTelListComp{
+	background-image:url(../img/02/fondo_caja_txt.png);
+	left:320px;
+	position:absolute;
+	font-size:10px;
+	width:100px;
+}
+
+
+
+.txt_nom_amiga{
+	/*background-image:url(../img/02/fondo_caja_txt_2.png)*/
+}
+
+input{
+	outline: none;
+	position:absolute;
+	color:#606;
+	
+	background-image:url(../img/bg_input.png);
+	background-repeat:repeat;
+	/*background-color: none;*/
+	border: none;
+	background-attachment: scroll; 
+	background-repeat: repeat; 
+	background-position-x: 0%; 
+	background-position-y: 0%; 
+	background-color: transparent;
+	
+}
+
+.nomAmiga{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#FFF;
+}
+
+.btn_guardar_familia{
+	width:153px;
+	height:74px;
+}
+
+.btn_guardar_familia{
+	position:absolute;
+}
+
+.imagen-tira{
+	width: 505px;
+	height: 315px;
+}
+
+
+.nombre-amiga{
+	left: 20px;
+	top: 35px;
+	position: absolute;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.cerra_shadow_cat{
+	cursor:pointer;
+}
+
+.nom_persona{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*CSS CALENDARIO CITAS*/
+	
+#calendario-citas {
+	height:400px;
+	width:410px;
+	float:left;
+}
+ 
+
+/*LARGE CALENDAR*/
+
+
+/* the input field */
+.date {
+    border:1px solid #ccc;
+    font-size:18px;
+    padding:4px;
+    text-align:center;
+    width:180px;
+    -moz-box-shadow:0 0 10px #eee inset;
+    
+    position: relative;
+}
+
+.clientes{
+	position: absolute;
+	top: 78px;
+	left: 572px;
+}
+.nombre-cliente input {
+	height: 12px;
+	font-size: 12px;
+	width: 190px;
+	font-family: 'Museo Sans 300';
+	border: none;
+}
+.fecha-cita {
+	position: absolute;
+	left: 205px;
+}
+.fecha-cita input {
+	width: 90px;
+	height: 10px;
+	font-size: 12px;
+	font-family: 'Museo Sans 300';
+	border: none;
+}
+
+#calendario-cobranza {
+    /* place on top of other elements. set a higher value if nessessary */
+	left: -83 !important; 
+	z-index:9999;  
+}
+
+#calendario-cobranza #caltitle{
+    /* place on top of other elements. set a higher value if nessessary */
+	color:#FFF;
+}
+
+#calroot_2_container input[type="text"]{
+	top:-5px;
+}
+
+
+#calroot {
+    /* place on top of other elements. set a higher value if nessessary */
+    z-index:1;
+    margin-top:-22px;
+    width:370px;
+    position: absolute;
+    font-family: 'Museo Sans 300'
+}
+
+#calendario-cobranzas-principal{
+	z-index:1;
+    margin-top:-22px;
+    width:370px;
+    position: absolute;
+	top: -700px;
+    font-family: 'Museo Sans 300'
+}
+
+#calbody {
+    clear:both;
+	left: 85px;
+	top: 10px;
+
+    font-family: 'Museo Sans 300';
+    width:189px;
+    font-size:13px;
+    border:1px solid #BDC8D2;
+    border-width:1px 1px 0;
+    background:#F5F9FF 0 37px repeat-x ;
+    -moz-box-shadow:0 0 10px 0px #ccc;
+    -webkit-box-shadow:0 0 10px 0px #ccc;
+    
+    position: relative;
+}
+
+#calhead {
+	position: relative;
+	width: 130%;
+	/*margin: 0 auto;*/
+	left:50px;
+}
+
+#caltitle {
+    color: #6B277E;
+    font-family: 'Museo Sans 300';
+    text-align:center;
+    font-size:18px;
+    width:215px;
+    position: absolute;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#calnext, #calprev {
+    display:block;
+    width:20px;
+    height:20px;
+    background:transparent url(../img/02/act_calendario/flecha_izq.png) no-repeat scroll center center;
+    cursor:pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#calnext {
+    background-image:url(../img/02/act_calendario/flecha_der.png);
+    position: absolute;
+	left: 220px;
+}
+
+#calprev {
+	left: 18px;
+}
+
+#calprev.caldisabled, #calnext.caldisabled {
+    visibility:hidden;
+    position: relative;
+}
+
+#caldays{
+	position: relative;
+}
+#caldays span {
+    display:block;
+    float:left;
+    width:27px;
+    text-align:center;
+    font-weight:bold;
+    padding:4px 0;
+    font-size:11px;
+    color:#7e7e7e;
+    line-height:18px;
+    background:#fff  repeat-x;
+    position: relative;
+}
+
+#calweeks {
+position: relative;
+}
+
+.calweek {
+    clear:left;
+    height:25px;
+    border-bottom:1px solid #BDC8D2;
+    border-top:1px solid #fff;
+    position: relative;
+}
+
+
+.calweek a {
+    display:block;
+    float:left;
+    width:25px;
+    height:25px;
+    text-decoration:none;
+    font-size:15px;
+    text-align:center;
+    line-height:25px;
+    color:#000;
+    border-right:1px solid #fff;
+    border-left:1px solid #BDC8D2;
+    text-shadow:1px 1px 1px #fff;
+    position: relative;
+}
+
+a.calsunday {
+    border-left:1px solid transparent;
+    color:#900;
+    background-color:#f2f2f2;
+    position: relative;
+}
+
+.calweek a:hover, .calfocus {
+    background:#fff  repeat-x;
+    position: relative;
+}
+
+.calsun {
+    color:red;
+    position: relative;
+}
+
+a.caloff {
+    color:#6C1F7F;
+    background:#eee repeat-x;
+    position: relative;
+}
+
+a.caloff.calfocus {
+    background-color:#ddd;
+    position: relative;
+}
+
+.caldisabled {
+    background-color:#efefef !important;
+    color:#ccc	!important;
+    cursor:default;
+    position: relative;
+}
+
+.caloff:hover {
+    background-color:rgb(245, 245, 250);
+    position: relative;
+}
+
+
+#caltitle select {
+    font-size:10px;
+    position: relative;
+}
+
+/* current day */
+#calcurrent {
+    background-color:#990099;
+    color:#FFF;
+    text-shadow:0 1px 0 #000;
+    border:0;
+    width:25px;
+    background-image:none;
+    -moz-box-shadow:inset 0 0 10px 0px #000;
+    position: relative;
+}
+
+/* today */
+#caltoday {
+    background-color:#666;
+    color:#fff;
+    text-shadow:0 1px 0 #000;
+    position: relative;
+}
+
+/*CSS CALENDARIO CITAS*/
+
+/*		SMALL CALENDAR		*/
+/* For the details, see:
+   http://flowplayer.org/tools/dateinput/index.html#skinning */
+
+/* the input field */
+.date-small {
+    border:1px solid #ccc;
+    font-size:18px;
+    padding:4px;
+    text-align:center;
+    width:194px;
+
+    -moz-box-shadow:0 0 10px #eee inset;
+    -webkit-box-shadow:0 0 10px #eee inset;
+}
+
+/* calendar root element */
+#calendario-fecha-citas {
+    /* place on top of other elements. set a higher value if nessessary */
+    z-index:10000;
+
+    margin-top:-1px;
+    width:198px;
+    padding:2px;
+    background-color:#fff;
+    font-size:11px;
+    border:1px solid #ccc;
+    top:180px !important;
+    left: 380px !important;
+
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+
+    -moz-box-shadow: 0 0 15px #666;
+    -webkit-box-shadow: 0 0 15px #666;
+}
+
+/* head. contains title, prev/next month controls and possible month/year selectors */
+#calendario-fecha-citas-calhead {
+    padding:2px 0;
+    height:22px;
+}
+
+#calendario-fecha-citas-caltitle {
+    font-size:14px;
+    color:#61217f;
+    float:left;
+    text-align:center;
+    width:155px;
+    line-height:20px;
+    text-shadow:0 1px 0 #ddd;
+    top: 190px !important;
+    left: 370px !important;
+}
+
+#calendario-fecha-citas-calnext, #calendario-fecha-citas-calprev {
+    display:block;
+    width:20px;
+    height:20px;
+    background:transparent url(/media/img/dateinput/prev.gif) no-repeat scroll center center;
+    float:left;
+    cursor:pointer;
+}
+
+#calendario-fecha-citas-calnext {
+    background-image:url(/media/img/dateinput/next.gif);
+    float:right;
+}
+
+#calendario-fecha-citas-calprev.calendario-fecha-citas-caldisabled, #calendario-fecha-citas-calnext.calendario-fecha-citas-caldisabled {
+    visibility:hidden;
+}
+
+/* year/month selector */
+#calendario-fecha-citas-caltitle select {
+    font-size:10px;
+}
+
+/* names of the days */
+#calendario-fecha-citas-caldays {
+    height:14px;
+    border-bottom:1px solid #ddd;
+}
+
+#calendario-fecha-citas-caldays span {
+    display:block;
+    float:left;
+    width:28px;
+    text-align:center;
+}
+
+/* container for weeks */
+#calendario-fecha-citas-calweeks {
+    background-color:#fff;
+    margin-top:4px;
+}
+
+/* single week */
+.calendario-fecha-citas-calweek {
+    clear:left;
+    height:22px;
+}
+
+/* single day */
+.calendario-fecha-citas-calweek a {
+    display:block;
+    float:left;
+    width:27px;
+    height:20px;
+    text-decoration:none;
+    font-size:11px;
+    margin-left:1px;
+    text-align:center;
+    line-height:20px;
+    color:#666;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+/* different states */
+.calendario-fecha-citas-calweek a:hover, .calendario-fecha-citas-calfocus {
+    background-color:#ddd;
+}
+
+/* sunday */
+a.calendario-fecha-citas-calsun {
+    color:red;
+}
+
+/* offmonth day */
+a.calendario-fecha-citas-caloff {
+    color:#ccc;
+}
+
+a.calendario-fecha-citas-caloff:hover {
+    background-color:rgb(245, 245, 250);
+}
+
+
+/* unselecteble day */
+a.calendario-fecha-citas-caldisabled {
+    background-color:#efefef !important;
+    color:#ccc	!important;
+    cursor:default;
+}
+
+/* current day */
+#calendario-fecha-citas-calcurrent {
+    background-color:#498CE2;
+    color:#fff;
+}
+
+/* today */
+#calendario-fecha-citas-caltoday {
+    background-color:#333;
+    color:#fff;
+}
+
+
+.opacidad{
+	background-color: rgba(0,0,0, .8);
+	z-index: 9999
+}
+
+#calbody div {
+position: relative;
+}
+
+.guardar_cita{
+	width:124px;
+	height:36px;
+}
+
+.guardar_cita > img{
+	position:absolute;
+}
+/*END SMALL CALENDAR*/
+
+
+#citas_programadas span{
+	color: #939;
+	font-family: arial;
+	font-size: 16px;
+	position: relative;
+	text-transform: capitalize;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.cita_prog {
+	position: relative !important;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 0px;
+	border-bottom: 1px dashed #CCC;
+	padding: 10px 0;
+}
+
+.cita_fec {
+	left: 15px;
+}
+
+.cita_per {
+	left: 66px;
+	width: 90px;
+	
+}
+
+.cita_hora {
+	left: 110px;
+	width:90px;
+}
+
+.cita_lugar_txt {
+	left: 145px;
+	width: 150px;
+	
+}
+
+
+
+.btn_sec{
+	width:113px;
+	height:46px;
+}
+
+.btn_sec > img{
+	position:absolute;
+}
+
+.nomAmiga{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+}
+
+/*FIN ESTILOS MODULO 2 */
+
+
+/*INICIO ESTILOS MODULO 3 */
+
+.no{
+	left:60px;
+}
+.si{
+	left:0px;
+}
+
+#imagenes-bolso{
+	height: 400px;
+	left: 445px;
+	top: 56px;
+	width: 430px;
+}
+
+.imagen-bolso {
+	height: 133px;
+	display: inline-block;
+	position: absolute;
+	vertical-align: bottom;
+	width: 140px;
+}
+
+#cartera{
+	height: 300px;
+	left: 98px;
+	position: absolute;
+	top: 20px;
+	width: 210px;
+	background-image:url(../img/bg_input.png);
+	background-repeat:repeat;
+	
+}
+/*FIN ESTILOS MODULO 3 */
+
+
+/*INICIO ESTILOS MODULO 4 */
+.inicio_agenda , .finalizar_agenda{
+ width:144px;
+ height:40px;
+}
+
+.inicio_agenda, .finalizar_agenda{
+	position:absolute;
+}
+
+.enviar_agenda{
+ width:164px;
+ height:38px;
+}
+
+.enviar_agenda{
+	position:absolute;
+}
+
+.span_agenda{
+	color: #990099;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+
+/***/
+
+
+
+/*FIN ESTILOS MODULO 4 */
+
+/*INICIO ESTILOS MODULO 5 */
+.iniciar_evaluacion{
+  width:140px;
+  height:37px;
+}
+
+.iniciar_evaluacion > img{
+ position:absolute;
+}
+
+.responder_preg_eva{
+  width:144px;
+  height:40px;
+}
+
+.responder_preg_eva > img{
+ position:absolute;
+}
+
+
+
+.respuesta_eva{
+	width:45px;
+	height:45px;
+}
+
+.respuesta_eva > img{
+ position:absolute;
+}
+
+.tot_resp_corr , .est_gan{
+	color: white;
+	font-size: 22px;
+}
+
+.tot_est_gan , .tot_est_gan_final{
+	color: #FFB718;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+	font-weight: bold;
+}
+
+
+
+.volver_eva{
+	width:140px;
+	height:37px;
+	cursor:pointer;
+}
+
+.volver_eva > img{
+ position:absolute;
+}
+
+
+.irEncuesta{
+	width:168px;
+	height:45px;
+}
+
+.irEncuesta > img{
+ 	position:absolute;
+}
+
+/*FIN ESTILOS MODULO 5 */
+
+
+#terminarCurso , .terminarCurso{
+	position:absolute;
+	cursor:pointer;
+}
+

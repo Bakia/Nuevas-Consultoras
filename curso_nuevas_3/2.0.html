@@ -1,0 +1,1393 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="javascript/jquery-migrate-1.1.0.js"></script>
+
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/elearning.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+<script src="../shared/scormfunctions.js" type="text/javascript"></script>
+<script src="javascript/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="javascript/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="javascript/jquery.timer.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascript/gs/TweenMax.min.js"></script>
+<script src="javascript/preloader.js" type="text/javascript"></script>
+<script src="javascript/jquery.tools.min.js" type="text/javascript"></script>
+
+
+<script src="javascript/elearning.js" type="text/javascript"></script>
+<script src="javascript/funciones.js" type="text/javascript"></script>
+<script src="javascript/extendidas.js" type="text/javascript"></script>
+
+<title></title>
+<script>
+	$(function() {
+		//$( ".secciones div" ).draggable({});
+		
+	});
+</script>
+
+
+
+</head>
+<body>
+
+
+<div id="" class="curso">
+ 	
+    
+    <div id="barra-perfil">
+   		<img src="img/bg_perfil.png">
+   		<div id="textos-perfil">
+   			<div class="texto">
+   				<img src="img/perfil/texto-perfil-01.png" alt="">
+   			</div>
+   		</div>
+    </div>
+
+
+	<!-- Secciones -->
+    <div class="secciones">
+        
+    	<div id="" class="seccion" data-flechas="derecha" data-audio="">
+            <div class="fondo"> 
+                <img src="img/02/fondo_inicio.png">
+            </div>
+            
+        </div>
+        
+        <div id="sec1etapa2" class="seccion mostrar-perfil"  data-audio="30">
+    
+           <div class="fondo"> <img src="img/bg_ciudad.jpg"></div>
+            
+            <div class="shadowSec1" style="width:960px; height:550px;">
+            	<div class="" style="left: 169px; top: 167px;"> 
+                <img src="img/02/globo_sec_1.png">
+                </div>
+                <div class="" style="left: 250px; top: 228px;"> 
+                    <img src="img/02/senora_sec_1.png">
+                </div>
+                <div class="boton cerrar_shadow" style="left: 165px; top: 160px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+            <div class="casa_claudia siguiente-diapositiva" style="left: 176px; top: 222px; display:none;"> 
+                <img src="img/02/boton-casa-claudia.png">
+            </div>
+            
+        </div>
+        
+        
+        <div class="seccion mostrar-perfil" style="" data-audio="31" id="sec2etapa2">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_casa-claudia.jpg"></div>
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	<div class="" style="left: 490px; top: 181px;"><img src="img/02/globo-casa-belissa.png"></div>
+            	<div class="" style="left: 669px; top: 210px;"><img src="img/02/img_07-belissa.png"></div>
+            	
+                <div class="boton cerrar_shadow " style="left: 489px; top: 176px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+             <div class="casa_claudia siguiente-diapositiva" style="left: 562px; top: 124px; display:none;"> 
+                <img src="img/btn_actividad-empezar.png">
+            </div>
+        
+        </div>
+        
+        <!-- Video 02 -->
+        <div class="seccion sec_video mostrar-perfil" id="videoEt2_1" data-flechas="">
+			<div class="fondo"> 
+				<img src="img/bg_video.jpg">
+			</div>
+			<div class="video-container">
+				<iframe  id="frame_video_1" scrolling="no" class="iframeVideo" data-video="2" src="video/2.html" width="745px" height="395px" style="">
+                </iframe>
+			</div>
+		</div>
+        
+        
+        <div class="seccion mostrar-perfil" style="" data-audio="34" id="sec3etapa2">
+        	
+            <div class="fondo"> <img src="img/bg_ciudad.jpg"></div>
+            
+            <div class="shadowSec1" style="width:960px; height:550px;">
+            	<div class="" style="left: 455px; top: 175px;"><img src="img/02/globo_sec_2.png"></div>
+                <div class="" style="left: 683px; top: 206px;"><img src="img/02/img_07-belissa.png"></div>
+                
+                <div class="boton cerrar_shadow " style="left: 454px; top: 171px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div> 
+            
+            <div class="casa_claudia siguiente-diapositiva" style="left: 329px; top: 336px; display:none;"> 
+                <img src="img/02/boton-tu-casa.png">
+            </div>
+            
+        </div>
+        
+        <!-- Tu casa -->
+        <div class="seccion mostrar-perfil" style="" data-audio="35" id="sec_tu_casa">
+        	<div class="fondo"> <img src="img/bg_tu-casa.jpg"></div>
+            
+            <div class="shadowSec1" style="width:960px; height:550px;">
+            	<div class="" style="left: 403px; top: 215px;"><img src="img/02/globo_tu_casa.png"></div>
+                <div class="" style="left: 668px; top: 156px;"><img src="img/02/img_06-belissa.png"></div>
+                
+                <div class="boton cerrar_shadow " style="left: 400px; top: 204px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+            <div class="casa_claudia siguiente-diapositiva" style="left: 238px; top: 249px; display:none;"> 
+                <img src="img/btn_actividad-empezar.png">
+            </div>
+        </div>
+        
+        <!-- Lista de contactos  -->
+        <div class="seccion" style="" data-audio="37" id="tu_red_social">
+        	 <div class="fondo"> <img src="img/bg_lineas-morado.jpg"></div>
+             
+             
+           <!-- Introduccion -->  
+           <div class="interna" >
+             
+                 <div class="" style="left: 64px; top: 57px;"> <img src="img/02/cuadro_tus_redes.png"></div>
+                 
+                 <div class="shadowSec1" style="width:960px; height:550px;">
+                    <div class="" style="left: 526px; top: 179px;"><img src="img/02/globo_tus_redes_soc.png"></div>
+                    <div class="" style="left: 668px; top: 156px;"><img src="img/02/img_05-belissa.png"></div>
+                    
+                    <div class="boton cerrar_shadowV2" style="left: 522px; top: 175px; display:none;"> 
+                        <img src="img/btn_circulo-cerrar.png">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Familia -->
+           <div class="interna" style="" data-audio="38" id="lista_familia">
+           		<div class="" style="left: 64px; top: 57px;"> <img src="img/02/cuadro_lista_familia.png"></div>
+
+                <!-- cajas de Texto -->
+                
+                <!-- Nombres -->
+                <div class="divTxtFamilia" style=" top: 236px; left:275px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaNom"></div>
+                
+                <div class="divTxtFamilia" style=" top: 236px; left:479px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaApe"></div>
+                
+                <div class="divTxtFamilia" style=" top: 236px; left:685px;"><img src="img/02/fondo_caja_txt_4.png">
+                <input type="text" class="txtFamiliaTel"></div>
+                
+                <div class="divTxtFamilia" style=" top: 262px; left:275px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaNom"></div> 
+                
+                <div class="divTxtFamilia" style=" top: 262px; left:479px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaApe"></div> 
+                
+                <div class="divTxtFamilia" style=" top: 262px; left:685px;"><img src="img/02/fondo_caja_txt_4.png">
+                <input type="text" class="txtFamiliaTel"></div>
+                
+                <div class="divTxtFamilia" style=" top: 289px; left:275px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaNom"></div>
+                
+                <div class="divTxtFamilia" style=" top: 289px; left:479px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaApe"></div>
+                
+                <div class="divTxtFamilia" style=" top: 289px; left:685px;"><img src="img/02/fondo_caja_txt_4.png">
+                <input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 315px; left:275px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaNom"></div>
+                
+                <div class="divTxtFamilia" style=" top: 315px; left:479px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaApe"></div>
+                
+                <div class="divTxtFamilia" style=" top: 315px; left:685px;"><img src="img/02/fondo_caja_txt_4.png">
+                <input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 341px; left:275px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaNom"></div>
+                
+                <div class="divTxtFamilia" style=" top: 341px; left:479px;"><img src="img/02/fondo_caja_txt.png">
+                <input type="text" class="txtFamiliaApe"></div>
+                
+                <div class="divTxtFamilia" style=" top: 341px; left:685px;"><img src="img/02/fondo_caja_txt_4.png">
+                <input type="text" class="txtFamiliaTel"></div>
+                
+                
+
+               <div class="btnGuardaListaFamilia" style="left: 714px; top: 410px; cursor:pointer; display:block;" data-lista="lista_familia"> 
+                    <img src="img/btn_guardar.png">
+                    <img src="img/btn_guardar_h.png" style="display:none;">
+                </div>
+                
+                
+                
+                <!-- Botones Editar -->
+                <div class="btnEditarLinea" data-linea=0 style=" top: 232px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=1 style=" top: 260px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=2 style=" top: 287px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=3 style=" top: 310px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=4 style=" top: 337px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                
+           		<!--  Shadow -->
+                
+                <div class="shadowSec1" style="width:960px; height:550px;">
+                    <div class="" style="left: 209px; top: 368px;"><img src="img/02/globo_lista_familia.png"></div>
+                    <div class="" style="left: 4px; top: 357px;"><img src="img/02/img_08-belissa.png"></div>
+                    
+                    <div class="boton cerrar_shadow" style="left: 453px; top: 368px; display:none;"> 
+                        <img src="img/btn_circulo-cerrar.png">
+                    </div>
+                </div>
+                
+           </div>
+           
+           <!-- Amigos -->
+           <div class="interna" style="" data-audio="39" id="lista_amigos" data-flechas="izquierda">
+           		<div class="" style="left: 64px; top: 57px;"> <img src="img/02/cuadro_lista_amigos.png"></div>
+
+                <!-- cajas de Texto -->
+                
+                <!-- Nombres -->
+                <div class="divTxtFamilia" style=" top: 236px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 236px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 236px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 262px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>   
+        		<div class="divTxtFamilia" style=" top: 262px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 262px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 289px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 289px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 289px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 315px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 315px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 315px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 341px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 341px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 341px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+
+
+                <div class="btnGuardaListaFamilia" style="left: 714px; top: 410px; cursor:pointer; display:block;" data-lista="lista_amigos"> 
+                    <img src="img/btn_guardar.png">
+                    <img src="img/btn_guardar_h.png" style="display:none;">
+                </div>
+                
+                
+                
+                <!-- Botones Editar -->
+                <div class="btnEditarLinea" data-linea=0 style=" top: 232px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=1 style=" top: 260px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=2 style=" top: 287px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=3 style=" top: 310px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=4 style=" top: 337px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                
+           		<!--  Shadow -->
+                
+                <div class="shadowSec1" style="width:960px; height:550px;">
+                    <div class="" style="left: 209px; top: 368px;"><img src="img/02/globo_lista_amigos.png"></div>
+                    <div class="" style="left: 4px; top: 357px;"><img src="img/02/img_08-belissa.png"></div>
+                    
+                    <div class="boton cerrar_shadow" style="left: 453px; top: 368px; display:none;"> 
+                        <img src="img/btn_circulo-cerrar.png">
+                    </div>
+                </div>
+                
+           </div>
+       	   
+           <!-- Vecinos -->
+           <div class="interna" style="" data-audio="40-1" id="lista_vecinos" data-flechas="izquierda">
+           		<div class="" style="left: 64px; top: 57px;"> <img src="img/02/cuadro_lista_vecinos.png"></div>
+
+                <!-- cajas de Texto -->
+                
+                <!-- Nombres -->
+                
+                <div class="divTxtFamilia" style=" top: 236px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 236px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 236px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 262px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>   
+        		<div class="divTxtFamilia" style=" top: 262px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 262px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 289px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 289px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 289px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                <div class="divTxtFamilia" style=" top: 315px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 315px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 315px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+                
+                
+                <div class="divTxtFamilia" style=" top: 341px; left:275px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaNom"></div>
+                <div class="divTxtFamilia" style=" top: 341px; left:479px;"><img src="img/02/fondo_caja_txt.png"><input type="text" class="txtFamiliaApe"></div>
+                <div class="divTxtFamilia" style=" top: 341px; left:685px;"><img src="img/02/fondo_caja_txt_4.png"><input type="text" class="txtFamiliaTel"></div>
+                
+
+                <div class="btnGuardaListaFamilia" style="left: 714px; top: 410px; cursor:pointer; display:block;" data-lista="lista_vecinos"> 
+                    <img src="img/btn_guardar.png">
+                    <img src="img/btn_guardar_h.png" style="display:none;">
+                </div>
+                
+                
+                
+                <!-- Botones Editar -->
+                <div class="btnEditarLinea" data-linea=0 style=" top: 232px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=1 style=" top: 260px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=2 style=" top: 287px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=3 style=" top: 310px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                <div class="btnEditarLinea" data-linea=4 style=" top: 337px; display:none;"> 
+                <img src="img/02/btn_editar.png">
+                <img src="img/02/btn_editarP.png" style="display:none;">
+                </div>
+                
+                
+           		<!--  Shadow -->
+                
+                <div class="shadowSec1" style="width:960px; height:550px;">
+                    <div class="" style="left: 209px; top: 368px;"><img src="img/02/globo_lista_vecinos.png"></div>
+                    <div class="" style="left: 4px; top: 357px;"><img src="img/02/img_08-belissa.png"></div>
+                    
+                    <div class="boton cerrar_shadow" style="left: 453px; top: 368px; display:none;"> 
+                        <img src="img/btn_circulo-cerrar.png">
+                    </div>
+                </div>
+                
+           </div>
+           
+           <!-- Lista Completa -->
+           <div class="interna" style="" data-audio="40-2" id="lista_completa" >
+           
+           		<div class="" style="left: 64px; top: 57px;"> <img src="img/02/cuadro_ver_lista_comp.png"></div>
+
+                <!-- cajas de Texto Familia-->
+                <div class="contenedorFamilia" style="width: 431px; height: 129px; overflow: hidden; left: 376px; top: 90px;">
+                
+                	<!-- Nombres Familia  -->
+                    <div class="divTxtFamiliaListComp" style=" top: 0px;"><input type="text" class="txtFamiliaNomListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 21px;"><input type="text" class="txtFamiliaNomListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 43px;"><input type="text" class="txtFamiliaNomListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 65px;"><input type="text" class="txtFamiliaNomListComp"></div>                    <div class="divTxtFamiliaListComp" style=" top: 88px;"><input type="text" class="txtFamiliaNomListComp"></div>
+                    
+                    <!-- Apellidos Familia  -->
+                    <div class="divTxtFamiliaListComp" style=" top: 0px;"><input type="text" class="txtFamiliaApeListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 21px;"><input type="text" class="txtFamiliaApeListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 43px;"><input type="text" class="txtFamiliaApeListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 65px;"><input type="text" class="txtFamiliaApeListComp"></div>   
+                    <div class="divTxtFamiliaListComp" style=" top: 88px;"><input type="text" class="txtFamiliaApeListComp"></div>
+                    
+                    <!-- Tel Familia  -->
+                    <div class="divTxtFamiliaListComp" style=" top: 0px;"><input type="text" class="txtFamiliaTelListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 21px;"><input type="text" class="txtFamiliaTelListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 43px;"><input type="text" class="txtFamiliaTelListComp"></div>
+                    <div class="divTxtFamiliaListComp" style=" top: 65px;"><input type="text" class="txtFamiliaTelListComp"></div>   
+                    <div class="divTxtFamiliaListComp" style=" top: 88px;"><input type="text" class="txtFamiliaTelListComp"></div>
+                    
+                </div>
+                
+                <!-- cajas de Texto Amigos-->
+                <div class="contenedorAmigos" style="width: 431px; height: 129px; overflow: hidden; left: 376px; top: 210px;">
+                
+                	<!-- Nombres Amigos  -->
+                    <div class="divTxtAmigosListComp" style=" top: 0px;"><input type="text" class="txtAmigosNomListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 21px;"><input type="text" class="txtAmigosNomListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 43px;"><input type="text" class="txtAmigosNomListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 65px;"><input type="text" class="txtAmigosNomListComp"></div> 
+                    <div class="divTxtAmigosListComp" style=" top: 88px;"><input type="text" class="txtAmigosNomListComp"></div>
+                    
+                    <!-- Apellidos Amigos  -->
+                    <div class="divTxtAmigosListComp" style=" top: 0px;"><input type="text" class="txtAmigosApeListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 21px;"><input type="text" class="txtAmigosApeListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 43px;"><input type="text" class="txtAmigosApeListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 65px;"><input type="text" class="txtAmigosApeListComp"></div>   
+                    <div class="divTxtAmigosListComp" style=" top: 88px;"><input type="text" class="txtAmigosApeListComp"></div>
+                    
+                    <!-- Tel Amigos  -->
+                    <div class="divTxtAmigosListComp" style=" top: 0px;"><input type="text" class="txtAmigosTelListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 21px;"><input type="text" class="txtAmigosTelListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 43px;"><input type="text" class="txtAmigosTelListComp"></div>
+                    <div class="divTxtAmigosListComp" style=" top: 65px;"><input type="text" class="txtAmigosTelListComp"></div>   
+                    <div class="divTxtAmigosListComp" style=" top: 88px;"><input type="text" class="txtAmigosTelListComp"></div>
+                    
+                </div>
+                
+                <!-- cajas de Texto Vecinos-->
+                <div class="contenedorVecinos" style="width: 431px; height: 129px; overflow: hidden; left: 376px; top: 333px;">
+                
+                	<!-- Nombres Vecino  -->
+                    <div class="divTxtVecinosListComp" style=" top: 0px;"><input type="text" class="txtVecinosNomListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 21px;"><input type="text" class="txtVecinosNomListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 43px;"><input type="text" class="txtVecinosNomListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 65px;"><input type="text" class="txtVecinosNomListComp"></div>                    <div class="divTxtVecinosListComp" style=" top: 88px;"><input type="text" class="txtVecinosNomListComp"></div>
+                    
+                    <!-- Apellidos Vecino  -->
+                    <div class="divTxtVecinosListComp" style=" top: 0px;"><input type="text" class="txtVecinosApeListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 21px;"><input type="text" class="txtVecinosApeListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 43px;"><input type="text" class="txtVecinosApeListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 65px;"><input type="text" class="txtVecinosApeListComp"></div>   
+                    <div class="divTxtVecinosListComp" style=" top: 88px;"><input type="text" class="txtVecinosApeListComp"></div>
+                    
+                    <!-- Tel Vecino  -->
+                    <div class="divTxtVecinosListComp" style=" top: 0px;"><input type="text" class="txtVecinosTelListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 21px;"><input type="text" class="txtVecinosTelListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 43px;"><input type="text" class="txtVecinosTelListComp"></div>
+                    <div class="divTxtVecinosListComp" style=" top: 65px;"><input type="text" class="txtVecinosTelListComp"></div>   
+                    <div class="divTxtVecinosListComp" style=" top: 88px;"><input type="text" class="txtVecinosTelListComp"></div>
+                    
+                </div>
+                
+               
+                
+                <div class="btnVerListaComp btnHover" style="left: 400px; top: 446px; cursor: pointer; display: block;"> 
+                    <img src="img/02/btn_ver_lista_comp.png">
+                    <img src="img/02/btn_ver_lista_compH.png" style="display:none;">
+                </div>
+                
+                <div class="" style="left: 580px; top: 446px; display: block;">
+                <img src="img/02/btn_enviar_lista.png">
+                </div>
+                
+                <div class="btnEnviaCorreo btnHover" style="left: 580px; top: 446px; cursor: pointer; display: none;"> 
+                    <img src="img/02/btn_enviar_lista.png" style="display:none;">
+                    <img src="img/02/btn_enviar_listaH.png" >
+                </div>
+                
+                
+                
+                
+                <div class="btnFacebook btnHover" style="left: 762px; top: 446px; cursor: pointer; display: block;"> 
+                	<a href="https://www.facebook.com/" target="_blank">
+                    	<img src="img/02/btn_face.png">
+                    	<img src="img/02/btn_faceH.png" style="display:none;">
+                    </a>
+                </div>
+                
+           		<!--  Shadow -->
+                <div id="shadow_1_lista_comp" style="width:960px; height:550px;">
+                	<div class="" style="left: 159px; top: 326px;"><img src="img/02/globo_ver_lista_comp.png"></div>
+                
+                    <div class="textoGlobo" style="left: 159px; top: 326px;"><img src="img/02/globo_ver_lista_comp1.png"></div>
+                    <div class="textoGlobo" style="left: 159px; top: 326px; display:none;"><img src="img/02/globo_ver_lista_comp2.png"></div>
+                    
+                    <div class="" style="left: -41px; top: 355px;"><img src="img/02/img_08-belissa.png"></div>
+                    
+                    <div class="btnAntGloboListComp" style="left: 170px; top: 499px; cursor: pointer; display:none;">
+                    <img src="img/btn_slide-ant.png"></div>
+                    
+                    <div class="btnSigGloboListComp" style="left: 390px; top: 502px; cursor: pointer; display:none;">
+                    <img src="img/btn_slide-sig.png"></div>
+                    
+                   
+                    
+                    <div class="boton cerrar_shadow" style="left: 401px; top: 324px; display:none;"> 
+                        <img src="img/btn_circulo-cerrar.png">
+                    </div>
+                    
+                </div>
+                
+                <!-- Shadow Correo -->
+               <div class="shadow_correo" style="width:960px; height:550px; display:none;">
+               		 <div class="" style="left: 263px; top: 237px;"><img src="img/02/shadow_correo.png"></div>
+                     
+                     <div class="correo_pers " style="left: 291px; top: 286px;">
+                     <input type="text" size="35" class="txt_env_correo">
+                     </div>
+                      
+                    <div class="boton btn_enviar_correo btnHover " style="left: 557px; top: 288px;">
+                        <img src="img/btn_enviar.png">
+                        <img src="img/btn_enviarP.png" style="display: none;">
+                    </div>
+                    
+                    <div class="boton cerrar_shadow" style="left: 650px; top: 238px;"><img src="img/btn_circulo-cerrar.png"></div>
+             
+               
+               </div>
+                
+                
+           
+           </div>
+           
+           <!-- Felicidades -->  
+           <div class="interna estrellas felicitacion" id="felicitacion-3" data-flechas="derecha">
+                <div class="fondo"> 
+                    <img src="img/bg_lineas-morado.jpg">
+                </div>
+                <div class="texto" data-felicitacion="si">
+                    <div class="" style="left: 123px; top: 178px;"> 
+                        <img src="img/estrellas/img_texto-felicitacion-actividad.png">
+                    </div>
+                    <div class="texto" style="left: 430px; top: 305px;">
+                        <img src="img/estrellas/img_texto-felicitacion_3.png">
+                    </div>
+                </div>
+                <span class="nombre-consultora" style="">Nombre de la consultora</span>
+                <span class="estrellas-acumuladas" style="">00</span>
+            </div>
+           
+            
+          <div class="flechas-internas">
+              <div class="Izquierda" style="left: -2px; top: 245px; display:none; cursor:pointer;"> 
+                  <img src="img/btn_seccion-ant.png">
+              </div>
+              
+              <div class="derecha" style="left: 910px; top: 245px; display:none; cursor:pointer;"> 
+                  <img src="img/btn_seccion-sig.png">
+              </div>
+          
+          </div>
+            
+             
+        </div>
+    
+        <!-- Ciudad 2 -->
+        <div class="seccion mostrar-perfil" style="" data-audio="44" id="ciudad_2">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_ciudad.jpg"></div>
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	<div class="" style="left: 452px; top: 208px;"><img src="img/02/globo-ciudad_2.png"></div>
+            	<div class="" style="left: 590px; top: 193px;"><img src="img/02/img_09-belissa.png"></div>
+            	
+                <div class="boton cerrar_shadow" style="left: 453px; top: 204px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+             <div class="casa_claudia siguiente-diapositiva" style="left: 145px; top: 227px; display:none;"> 
+                <img src="img/02/boton-casa-claudia.png">
+            </div>
+        
+        </div>
+        
+        <!-- Casa Claudia 2 -->
+        <div class="seccion mostrar-perfil" style="" data-audio="46" id="casa_claudia_2">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_casa-claudia.jpg"></div>
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	<div class="" style="left: 404px; top: 346px;"><img src="img/02/globo-casa-belissa_2.png"></div>
+            	<div class="" style="left: 708px; top: 334px;"><img src="img/02/img_10-belissa.png"></div>
+            	
+                <div class="boton cerrar_shadow" style="left: 401px; top: 340px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+             <div class="casa_claudia siguiente-diapositiva" style="left: 534px; top: 104px; display:none;"> 
+                <img src="img/btn_actividad-empezar.png">
+            </div>
+        
+        </div>
+        
+        <!-- Video 03 -->
+        <div class="seccion sec_video mostrar-perfil" id="videoEt2_2" data-flechas="">
+			<div class="fondo"> 
+				<img src="img/bg_video.jpg">
+			</div>
+			<div class="video-container">
+				<iframe  id="frame_video_2" scrolling="no" class="iframeVideo" data-video="3" src="video/3.html" width="745px" height="395px" style="">
+                </iframe>
+			</div>
+		</div>
+
+        <!-- Ciudad 3 -->
+        <div class="seccion mostrar-perfil" style="" data-audio="49" id="ciudad_3">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_ciudad.jpg"></div>
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	<div class="" style="left: 495px; top: 384px;"><img src="img/02/globo-ciudad_3.png"></div>
+            	<div class="" style="left: 709px; top: 337px;"><img src="img/02/img_10-belissa.png"></div>
+            	
+                <div class="boton cerrar_shadow " style="left: 496px; top: 379px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+             <div class="casa_claudia siguiente-diapositiva" style="left: 354px; top: 314px; display:none;"> 
+                <img src="img/02/boton-tu-casa.png">
+            </div>
+        
+        </div>
+        
+        <!-- Menu casa claudia Actividad 1 -->
+        <div class="seccion mostrar-perfil" style="" data-audio="50" id="menu_casa_1">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_tu-casa.jpg"></div>
+            
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	<div class="" style="left: 537px; top: 277px;"><img src="img/02/globo_menu_1.png"></div>
+            	<div class="" style="left: 611px; top: 262px;"><img src="img/02/img_11-belissa.png"></div>
+            	
+                <div class="boton cerrar_shadow " style="left: 533px; top: 273px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+            <div class="casa_claudia siguiente-diapositiva" style="left: 236px; top: 251px; display:none;"> 
+                <img src="img/btn_actividad-empezar.png">
+            </div>
+        
+        </div>
+        
+        <!-- Productos Para Cada Un Cliente -->
+        <div class="seccion" style="" data-audio="" id="prod_cada_cliente">
+        	 <div class="fondo"> <img src="img/bg_lineas-morado.jpg"></div>
+             
+             
+           <!-- Introduccion -->  
+           <div class="interna" id="nombre_de_amiga">
+             
+                 <div class="" style="left: 100px; top: 177px;"><img src="img/02/cuadro_prod_clientes.png"></div>
+                 
+                 <div class="" style="left: 117px; top: 80px;"> <img src="img/02/txt_prod_clientes.png"></div>
+
+                 
+               <!-- <div class="" style="left: 266px; top: 411px;"> <img src="img/02/fondo_caja_txt_2.png"></div>-->
+				<div class="" style="left: 286px; top: 411px;">
+                    <img src="img/02/fondo_caja_txt_2.png">
+                    <input type="text" class="txt_nom_amiga" style="width: 330px; height: 40px; left:10px;">
+                </div>
+				                 
+            </div>
+            
+            <!-- Actividad Drags -->  
+           <div class="interna" id="act_drags_prod">
+           		
+             	<div class="" style="left: 100px; top: 55px;"><img src="img/02/txt_drags_prods.png"></div>
+                <div class="" style="left: 71px; top: 115px;"><img src="img/02/cuadro_drags_prods.png"></div>
+                
+                <div style="left: 99px; top: 92px; width:740px;"><span class="nomAmiga" ></span></div>
+                
+                <!-- Cuadro drop -->
+                <div class="cajaDropProds" style="left: 376px; top: 164px; overflow:hidden; width: 490px;height: 215px;">
+                <img src="img/02/cuadro_drops_prods.png"></div>
+                
+                <!-- Drags -->
+                
+                <div class="prodDrag" style="left: 368px; top: 411px;"><img src="img/02/prods_drags/prod_1.png"></div>
+                <div class="prodDrag" style="left: 435px; top: 429px;"><img src="img/02/prods_drags/prod_2.png"></div>
+                <div class="prodDrag" style="left: 505px; top: 443px;"><img src="img/02/prods_drags/prod_3.png"></div>
+                <div class="prodDrag" style="left: 601px; top: 426px;"><img src="img/02/prods_drags/prod_4.png"></div>
+                <div class="prodDrag" style="left: 675px; top: 414px;"><img src="img/02/prods_drags/prod_5.png"></div>
+                <div class="prodDrag" style="left: 743px; top: 434px;"><img src="img/02/prods_drags/prod_6.png"></div>
+                <div class="prodDrag" style="left: 821px; top: 428px;"><img src="img/02/prods_drags/prod_7.png"></div>
+                
+                
+            </div>
+            
+           <!-- Familia -->  
+           <div class="interna " id="agregar_familia" style="display: block; left: 0px; opacity: 1;" data-flechas="derecha">
+             
+                 <div class="" style="left: 105px; top: 38px;"><img src="img/02/txt_agr_familia.png"></div>
+                 <div class="" style="left: 94px; top: 200px;"><img src="img/02/cuadro_agr_familia.png"></div>
+                 
+                 <!-- Esposo -->
+                 <div class="esposo" style="left: 100px; top: 177px;">
+                 	<div class="" style="left: -2px; top: 23px;"><img src="img/02/cuadro_esposo.png"></div>
+                    
+                    <div class="divTxt" style="left: 81px; top: 270px;">
+                    <img src="img/02/fondo_caja_txt_3.png">
+                    <input type="text" class="txt_esposo"></div>
+                    
+                    <!-- Flechas -->
+                    <div class="boton agregarTxt" style="left: 254px; top: 215px; display: none;"><img src="img/02/btn_agregar.png"></div>
+                    <div class="boton quitarTxt" style="left: 60px; top: 215px; display:block;"><img src="img/02/btn_quitar.png"></div>
+                 
+                 </div>
+                 
+                 <!-- Hijos -->
+                 <div class="hijos" style="left: 412px; top: 232px; overflow: hidden; width: 370px; height: 142px; ">
+                 	<div class="" style="left: -1px; top: 3px;"><img src="img/02/cuadro_ninos.png"></div>
+                 	
+                    <div class="divTxt hijo" style="left: 116px; top: 47px; display:none;" data-cual=0>
+                    <img src="img/02/fondo_caja_txt_3.png">
+                    <input type="text" class="hijo_1"></div>
+                    
+                    <div class="divTxt hijo" style="left: 116px; top: 74px; display:none;" data-cual=1>
+                    <img src="img/02/fondo_caja_txt_3.png">
+                    <input type="text" class="hijo_2"></div>
+                    
+                    <div class="divTxt hijo" style="left: 117px; top: 100px; display:none;" data-cual=2>
+                    <img src="img/02/fondo_caja_txt_3.png">
+                    <input type="text" class="hijo_3"></div>
+                    
+                    <!-- Flechas -->
+                    <div class="boton agregarTxt" style="left: 64px; top: 96px;"><img src="img/02/btn_agregar.png"></div>
+                    <div class="boton quitarTxt" style="left: 323px; top: 46px; display:none;"><img src="img/02/btn_quitar.png"></div>
+                    
+                 </div>
+                 
+                 <!-- Hijas -->
+                 <div class="hijas" style="left: 419px; top: 377px; overflow: hidden; width: 362px; height: 142px; ">
+                 	<div class="" style="left: -26px; top: -6px;"><img src="img/02/cuadro_ninas.png"></div>
+                 	
+                    <div class="divTxt hijo" style="left: 114px; top: 32px; display:none;" data-cual=0>
+                    <img src="img/02/fondo_caja_txt_3.png">
+                    <input type="text" class="hija_1"></div>
+                    
+                    <div class="divTxt hijo" style="left: 114px; top: 57px; display:none;" data-cual=1>
+                    <img src="img/02/fondo_caja_txt_3.png">
+                    <input type="text" class="hija_2"></div>
+                    
+                    <div class="divTxt hijo" style="left: 114px; top: 85px; display:none;" data-cual=2>
+                    <img src="img/02/fondo_caja_txt_3.png">
+                    <input type="text" class="hija_3"></div>
+                    
+                    <!-- Flechas -->
+                    <div class="boton agregarTxt" style="left: 58px; top: 84px;"><img src="img/02/btn_agregar.png"></div>
+                    <div class="boton quitarTxt" style="left: 316px; top: 31px; display:none;"><img src="img/02/btn_quitar.png"></div>
+                    
+                 </div>
+                 
+                 <!-- Boton Guardar -->
+                 <div class="boton btn_guardar_familia" style="left: 756px; top: 464px;">
+                     <img src="img/btn_guardar.png">
+                     <img src="img/btn_guardar_h.png" style="display:none;">
+                 </div>
+                 
+				                 
+
+           </div>
+                      
+           <!-- actividad Secciones Familia-->  
+           <div class="interna" id="act_secciones_papeles_fam">
+             	 
+                 <div class="boton btn_sec" data-cual="0" style="left: 558px; top: 10px;">
+                 <img src="img/02/act_secciones/btn_esika.png" >
+                 <img src="img/02/act_secciones/btn_esika_h.png" style="display:none;">
+                 </div> 
+                 
+                 <div class="boton btn_sec" data-cual="1" style="left: 675px; top: 10px;">
+                 <img src="img/02/act_secciones/btn_lbel.png">
+                 <img src="img/02/act_secciones/btn_lbel_h.png" style="display:none;">
+                 </div> 
+                 
+                 <div class="boton btn_sec" data-cual="2" style="left: 790px; top: 14px;">
+                 <img src="img/02/act_secciones/btn_cyzone.png">
+                 <img src="img/02/act_secciones/btn_cyzone_h.png" style="display:none;">
+                 </div> 
+                 
+                 <div style="left: 67px; top: 43px;" class=""><img src="img/02/act_secciones/fondo_1.png"></div>
+ 				
+                 
+                
+				<!-- Esika -->
+				<div id="slider_esika_f" class="cuadro_sec" style="">
+
+					<div class="tira-imagenes" style="left: 361px; top: 47px; overflow: hidden; width: 533px; height: 387px;">
+						
+                        <div class="imagen-tira" id="familia-tira01" style="opacity: 1; left: 0px; top: 46px;">
+							<img src="img/02/act_secciones/esika-1.jpg"> 
+						</div>
+
+						<div class="imagen-tira" id="familia-tira02" style="left: 533px; top: 46px;">
+							<img src="img/02/act_secciones/Esika-2.jpg"> 
+						</div>
+
+					</div>
+
+					<div id="postits_familia" style="top: 0; left: 43px" class="">
+						
+                        <div class="postit" id="familiapostit1" style="left: 337px; top: 449px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+
+						<div class="postit" id="familiapostit2" style="left: 462px; top: 453px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+
+						<div class="postit" id="familiapostit3" style="left: 576px; top: 458px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+						
+					</div>
+
+
+					<div class="botones-tira-imagenes">
+						<div class="boton-tira-anterior" style="left: 350px; top: 379px;">
+							<img src="img/btn_slide-ant.png">
+						</div>
+						<div class="boton-tira-siguiente" style="left: 861px; top: 375px;">
+							<img src="img/btn_slide-sig.png">
+						</div>
+					</div>
+
+				</div>
+                
+                
+                <!-- LBEL -->
+                <div id="slider_lbel_f" class="cuadro_sec" style=" display:none;">
+
+					<div class="tira-imagenes_2" style="left: 361px; top: 47px; overflow: hidden; width: 533px; height: 387px;">
+						
+                        <div class="imagen-tira" id="familia-tira01" style="opacity: 1; left: 0px; top: 46px;">
+							<img src="img/02/act_secciones/lbel-1.jpg"> 
+						</div>
+
+						<div class="imagen-tira" id="familia-tira02" style="left: 533px; top: 46px;">
+							<img src="img/02/act_secciones/lbel-2.jpg"> 
+						</div>
+
+					</div>
+
+					<div id="postits_familia_2" style="top: 0; left: 43px" class="">
+						
+                        <div class="postit" id="familiapostit1_1" style="left: 337px; top: 449px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+
+						<div class="postit" id="familiapostit2" style="left: 462px; top: 453px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+
+						<div class="postit" id="familiapostit3" style="left: 576px; top: 458px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+						
+					</div>
+
+
+					<div class="botones-tira-imagenes">
+						<div class="boton-tira-anterior" style="left: 350px; top: 379px;">
+							<img src="img/btn_slide-ant.png">
+						</div>
+						<div class="boton-tira-siguiente" style="left: 861px; top: 375px;">
+							<img src="img/btn_slide-sig.png">
+						</div>
+					</div>
+
+				</div>
+
+				
+                <!-- Cy . Zone -->
+                <div id="slider_cyzone_f" class="cuadro_sec" style="display:none;">
+
+					<div class="tira-imagenes_3" style="left: 361px; top: 47px; overflow: hidden; width: 533px; height: 387px;">
+						
+                        <div class="imagen-tira" id="familia-tira01" style="opacity: 1; left: 0px; top: 46px;">
+							<img src="img/02/act_secciones/cyzone-1-arreglada.jpg"> 
+						</div>
+
+						<div class="imagen-tira" id="familia-tira02" style="left: 533px; top: 46px;">
+							<img src="img/02/act_secciones/cyzone-2.jpg"> 
+						</div>
+
+					</div>
+
+					<div id="postits_familia_3" style="top: 0; left: 43px" class="">
+						
+                        <div class="postit" id="familiapostit1_2" style="left: 337px; top: 449px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+
+						<div class="postit" id="familiapostit2" style="left: 462px; top: 453px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+
+						<div class="postit" id="familiapostit3" style="left: 576px; top: 458px;">
+							<img src="img/02/act_secciones/papel.png">
+							<span class="relacion"></span>
+							<span style='left: 30px; top: 33px; position: absolute; ' class="nombre-amiga"></span>
+						</div>
+						
+					</div>
+
+
+					<div class="botones-tira-imagenes">
+						<div class="boton-tira-anterior" style="left: 350px; top: 379px;">
+							<img src="img/btn_slide-ant.png">
+						</div>
+						<div class="boton-tira-siguiente" style="left: 861px; top: 375px;">
+							<img src="img/btn_slide-sig.png">
+						</div>
+					</div>
+
+				</div>
+                
+                <div class="globo_postits" style=" left: 456px; top: 23px; "><img src="img/02/act_secciones/globo_postits.png"></div>
+                
+
+           </div>
+            
+            
+           <!-- Caja de Pedido -->  
+           <div class="interna" data-flechas="derecha">
+             
+                 <div class="" style="left: 88px; top: 104px;"><img src="img/02/cuadro_caja_ped.png"></div>
+                 
+            </div>
+            
+           <!-- Catalogos -->  
+           <div class="interna" id="sec_catalogos" >
+             	  
+                  
+                  <div class="shadow_cat" style="left: 0px; top: 0px; width:960px; height:550px; display:none;">
+                 	
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/fondo_3.png"></div>
+                    <div class="" style="left: 341px; top: 111px;"><img src="img/02/sec_catalogos/cat_1.png"></div>
+                    <div class="" style="left: 598px; top: 110px;"><img src="img/02/sec_catalogos/cat_2.png"></div>
+                 	<div class="" style="left: 427px; top: 70px;"><img src="img/02/sec_catalogos/nota_dif.png"></div>
+                 	<div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/texto_catalogos.png"></div>
+                    <div class="" style="left: 426px; top: 329px;"><img src="img/02/sec_catalogos/mensaje_precios.png"></div>
+                    
+                    <div class="boton sig_interna" style="left: 907px; top: 269px; "><img src="img/btn_seccion-sig.png"></div>
+                 </div>
+                  
+             	 
+                 <div class="shadow_cat" style="left: 0px; top: 0px; width:960px; height:550px; display:none;">
+                 	
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/fondo_2_2.png"></div>
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/texto_catalogos.png"></div>
+                    
+                    <div class="cerra_shadow_cat" data-cual=0 style="left: 907px; top: 269px; "><img src="img/btn_seccion-sig.png"></div>
+                 
+                 </div>
+                 
+                 
+                 <div class="shadow_cat" style="left: 0px; top: 0px; width:960px; height:550px; display:none;">
+                 	
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/fondo_2.png"></div>
+                    <div class="" style="left: 545px; top: 132px;"><img src="img/02/sec_catalogos/papel_2.png"></div>
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/texto_catalogos.png"></div>
+                    
+                    <div class="cerra_shadow_cat titila" data-cual=1 style="left: 650px; top: 186px; display:none;">
+                    <img src="img/02/sec_catalogos/sombra_2.png"></div>
+                 
+                 </div>
+                 
+             
+                 <div class="shadow_cat" style="left: 0px; top: 0px; width:960px; height:550px; display:none;">
+                 	
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/fondo_1_2.png"></div>
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/texto_catalogos.png"></div>
+                    
+                    <div class="cerra_shadow_cat" data-cual=2 style="left: 907px; top: 269px; "><img src="img/btn_seccion-sig.png"></div>
+                 
+                 </div>
+             	 	
+             
+                 <div class="shadow_cat" style="left: 0px; top: 0px; width:960px; height:550px;">
+                 	
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/fondo_1.png"></div>
+                    <div class="" style="left: 684px; top: 162px;"><img src="img/02/sec_catalogos/papel_1.png"></div>
+                    
+                    <div class="cerra_shadow_cat titila" data-cual=3 style="left: 716px; top: 282px; display:none;">
+                    <img src="img/02/sec_catalogos/sombra_1.png"></div>
+                    
+                    <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/texto_catalogos.png"></div>
+                    
+                 
+                 </div>
+                 
+                 <div class="" style="left: 59px; top: 68px;"><img src="img/02/sec_catalogos/texto_catalogos.png"></div>
+                 
+            </div>
+            
+            <!-- Ultimo -->  
+           <div class="interna estrellas felicitacion" id="felicitacion-4" data-flechas="derecha">
+                <div class="fondo"> 
+                    <img src="img/bg_lineas-morado.jpg">
+                </div>
+                <div class="texto" data-felicitacion="si">
+                    <div class="" style="left: 123px; top: 178px;"> 
+                        <img src="img/estrellas/img_texto-felicitacion-actividad.png">
+                    </div>
+                    <div class="texto" style="left: 430px; top: 305px;">
+                        <img src="img/estrellas/img_texto-felicitacion_4.png">
+                    </div>
+                </div>
+                <span class="nombre-consultora" style="">Nombre de la consultora</span>
+                <span class="estrellas-acumuladas" style="">00</span>
+            </div>
+
+           
+			<!-- Flechas -->
+          <div class="flechas-internas">
+              <div class="Izquierda" style="left: -2px; top: 245px; display:none; cursor:pointer;"> 
+                  <img src="img/btn_seccion-ant.png">
+              </div>
+              
+              <div class="derecha" style="left: 910px; top: 245px; display:none; cursor:pointer;"> 
+                  <img src="img/btn_seccion-sig.png">
+              </div>
+          
+          </div>
+            
+             
+        </div>
+        
+        <!-- Ciudad 4 -->
+        <div class="seccion mostrar-perfil" style="" data-audio="60" id="ciudad_4">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_ciudad.jpg"></div>
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	
+            	<div class="" style="left: 717px; top: 282px;"><img src="img/02/img_12-belissa.png"></div>
+            	<div class="" style="left: 502px; top: 282px;"><img src="img/02/globo-ciudad_4.png"></div>
+                
+                <div class="boton cerrar_shadow" style="left: 498px; top: 276px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+            <div class="casa_claudia siguiente-diapositiva" style="left: 140px; top: 226px; display:none;"> 
+                <img src="img/02/boton-casa-claudia.png">
+            </div>
+        
+        </div>
+        
+        <!-- Casa Claudia 3 -->
+        <div class="seccion mostrar-perfil" style="" data-audio="61" id="casa_claudia_3">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_casa-claudia.jpg"></div>
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	
+            	<div class="" style="left: 755px; top: 307px;"><img src="img/02/img_13-belissa.png"></div>
+            	<div class="" style="left: 401px; top: 393px;"><img src="img/02/sube_volumen.png"></div>
+                
+                <div class="boton cerrar_shadow " style="left: 398px; top: 387px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+            
+             <div class="casa_claudia siguiente-diapositiva" style="left: 534px; top: 104px; display:none;"> 
+                <img src="img/btn_actividad-empezar.png">
+            </div>
+        
+        </div>
+        
+        <!-- Video 04 -->
+        <div class="seccion sec_video mostrar-perfil" id="videoEt2_3" data-flechas="">
+			<div class="fondo"> 
+				<img src="img/bg_video.jpg">
+			</div>
+			<div class="video-container">
+				<iframe  id="frame_video_3" scrolling="no" class="iframeVideo" data-video="4" src="video/4.html" width="745px" height="395px" style="">
+                </iframe>
+			</div>
+		</div>
+        
+        <!-- Ciudad 5 -->
+        <div class="seccion mostrar-perfil" style="" data-audio="64" id="ciudad_5">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_ciudad.jpg"></div>
+
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	
+            	<div class="" style="left: 684px; top: 276px;"><img src="img/02/img_14-belissa.png"></div>
+            	<div class="" style="left: 528px; top: 204px;"><img src="img/02/globo-ciudad_5.png"></div>
+                
+                <div class="boton cerrar_shadow " style="left: 530px; top: 196px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+
+            </div>
+            
+            <div class="tu_casa siguiente-diapositiva" style="left: 352px; top: 316px; display:none;"> 
+                <img src="img/02/boton-tu-casa.png">
+            </div>
+        
+        </div>
+        
+        <!-- tu casa (agenda) -->
+        <div class="seccion mostrar-perfil" style="" data-audio="65" id="tu_casa_agenda">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_tu-casa.jpg"></div>
+			
+            <div class="casa_claudia siguiente-diapositiva" style="left: 765px; top: 88px; display:none;"> 
+                <img src="img/btn_actividad-empezar.png">
+            </div>
+            
+            <!-- Shadow -->
+            
+            <div class="shadowSec2 " style="width: 960px; height: 550px;">
+            	
+            	<div class="" style="left: 704px; top: 336px;"><img src="img/02/img_10-belissa.png"></div>
+            	<div class="" style="left: 432px; top: 381px;"><img src="img/02/globo_click_agenda.png"></div>
+                
+                <div class="boton cerrar_shadow  " style="left: 426px; top: 375px; display:none;"> 
+                    <img src="img/btn_circulo-cerrar.png">
+                </div>
+            </div>
+        
+        </div>
+        
+        <!-- Calendario -->
+        <div class="seccion" style="" data-audio="" id="act_citas">
+        	<div class="" style="left: 0px; top: 0px;"><img src="img/bg_lineas-morado.jpg"></div>
+            <div class="" style="left: 72px; top: 57px;"><img src="img/02/act_calendario/fondo_citas.png"></div>
+            
+            <!--  globo haz click -->
+            <div class="globo_1_cal" style="left: 455px; top: 220px;z-index: 10;"><img src="img/02/act_calendario/globo_1.png"></div>
+            
+            <div class="boton btn_enviar_correo_cal" style="left: 68px; top: 490px; display:none;">
+            	<img src="img/btn_enviar.png">
+                <img src="img/btn_enviarP.png" style="display: none;">
+            </div>
+			
+            
+            <div id="calendario">
+                <input type="date" name="calendario-citas" value="0" />
+            </div>
+            
+            <div id="citas_programadas" style="overflow: hidden; width: 545px; height: 345px; left: 85px; top: 119px;"></div>
+
+            <div class="shadow_cuadro_azul" style="display:none; width:960px; height:550px; left: -16px; top: -7px; z-index:10;">
+            	<div class="" style="left: 537px; top: 63px;"><img src="img/02/act_calendario/sombra_cita.png"></div>
+                <div class="" style="left: 614px; top: 159px;"><img src="img/02/act_calendario/cuadro_cita.png"></div>
+                
+                <div class="" style="left: 625px; top: 360px;">
+                <img src="img/02/act_calendario/caja_blanca.png">
+                <input type="text" class="cita_lugar"></div>
+                
+                <div class="tiempo  " style="left: 625px; top: 292px; width:150px;">
+                    <select id="cita_hora">
+                    	<option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    
+                    <select id="cita_min"></select>
+                    
+                    <select id="cita_jr">
+                    	<option>AM</option>
+                        <option>PM</option>
+                    </select>
+                    
+                </div>
+                
+                <div class="" style="left: 620px; top: 205px;"><img src="img/02/act_calendario/caja_blanca.png">
+                <input type="text" class="cita_persona"></div>
+               
+               <!-- Boton guardar cita -->
+                <div style="left: 656px; top: 397px;" class="boton guardar_cita ">
+                	<img src="img/btn_guardar_peq.png">
+                    <img src="img/btn_guardar_peq_h.png" style="display:none;">
+                </div>
+
+                <div class="boton cerrar_shadow1_cal" style="left: 804px; top: 159px;"><img src="img/btn_circulo-cerrar.png"></div>
+            </div>
+            
+            <div class="shadow_cuadro_primer_mensaje" style="display:none; width:960px; height:550px; z-index:15;">
+            	<div class="" style="left: -37px; top: 271px;"><img src="img/02/img_14-belissa.png"></div>
+                <div class="" style="left: 169px; top: 327px;"><img src="img/02/act_calendario/globo_2.png"></div>
+                
+                <div class="boton cerrar_shadow1_cal" style="left: 545px; top: 321px; display:none;">
+                <img src="img/btn_circulo-cerrar.png"></div>
+            </div>
+            
+            <!-- Shadow Correo -->
+           <div class="shadow_correo_cal" style="width:960px; height:550px; display:none; z-index:15;">
+                 <div class="" style="left: 263px; top: 237px;"><img src="img/02/shadow_correo.png"></div>
+                 
+                 <div class="correo_pers_cal " style="left: 291px; top: 286px;">
+                 <input type="text" size="35" class="txt_env_correo">
+                 </div>
+                  
+                <div class="boton btn_enviar_correo_cal_2 btnHover " style="left: 557px; top: 288px;">
+                    <img src="img/btn_enviar.png">
+                    <img src="img/btn_enviarP.png" style="display: none;">
+                </div>
+                
+                <div class="boton cerrar_shadow1_cal" style="left: 650px; top: 238px;"><img src="img/btn_circulo-cerrar.png"></div>
+         
+           
+           </div>
+        
+        </div>
+        
+        <!-- Felicidades -->  
+       <div class="seccion estrellas felicitacion" id="felicitacion-5" data-flechas="derecha">
+            <div class="fondo"> 
+                <img src="img/bg_lineas-morado.jpg">
+            </div>
+            <div class="texto" data-felicitacion="si">
+                <div class="" style="left: 123px; top: 178px;"> 
+                    <img src="img/estrellas/img_texto-felicitacion-actividad.png">
+                </div>
+                <div class="texto" style="left: 430px; top: 305px;">
+                    <img src="img/estrellas/img_texto-felicitacion_5.png">
+                </div>
+            </div>
+            <span class="nombre-consultora" style="">Nombre de la consultora</span>
+            <span class="estrellas-acumuladas" style="">00</span>
+        </div>
+        
+       <!-- Ultimo -->  
+       <div class="seccion estrellas felicitacion" id="felicitacion-mod-2" data-flechas="">
+            <div class="fondo"> 
+                <img src="img/bg_lineas-morado.jpg">
+            </div>
+            <div class="texto" data-felicitacion="si">
+                <div class="" style="left: 123px; top: 207px;"> 
+                    <img src="img/estrellas/img_texto-felicitacion-modulo.png">
+                </div>
+                <div class="texto" style="left: 430px; top: 180px;">
+                    <img src="img/estrellas/img_texto-felicitacion-modulo_2.png">
+                </div>
+            </div>
+            <span class="estrellas-acumuladas" style="">00</span>
+            
+            
+            <div id="terminarCurso" class="" style="left: 910px; top: 245px;">
+	   			<img src="img/btn_seccion-sig.png">
+	  		</div>
+            
+        </div>
+        
+
+       <div class="seccion" style="background-color:#990099; z-index:900;" data-audio=""></div>
+         
+    </div>
+    
+    <!-- Flechas-->
+    
+    <div id="flechas" style="top: 245px; position: absolute;">	  
+		<div id="derecha" class="flecha" style="left: 910px; display:none;">
+	   		<img src="img/btn_seccion-sig.png">
+	  	</div>
+	  	<div id="izquierda" class="flecha" style="left: -2px; display:none;">
+	   		<img src="img/btn_seccion-ant.png">
+	  	</div>
+	</div>
+
+    <!-- Secciones -->
+</div>
+
+
+<script src="t.js" type="text/javascript"></script>
+<div id="pano" style="width:1px; height:1px;position:absolute; z-index:1000"></div>
+<script>
+	// <![CDATA[
+	var viewer = createPanoViewer({swf:"t.swf", id:"krpanoSWFObject", target:"pano"});
+	// set the default xml file
+	viewer.addVariable("xml", "t.xml");
+	// pass all parameters from the html file to the viewer
+	viewer.passQueryParameters();
+	// embed and start the viewer
+	viewer.embed();
+	function playSong(intt)
+	{
+		var krpano = document.getElementById("krpanoSWFObject");
+		if (!krpano || !krpano.get)
+		{
+			return "";
+		}
+		krpano.call("playSong(" + intt + ");");
+	}
+	function stopSong(){
+		var krpano = document.getElementById("krpanoSWFObject");
+		if (!krpano || !krpano.get)
+		{
+			return "";
+		}
+		krpano.call("stopSong();");
+	}
+	
+// ]]>
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="javascript/jquery-migrate-1.1.0.js"></script>
+
+
+<script src="../shared/scormfunctions.js" type="text/javascript"></script>
+<script src="javascript/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="javascript/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="javascript/jquery.timer.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascript/gs/TweenMax.min.js"></script>
+<script src="javascript/preloader.js" type="text/javascript"></script>
+<script src="javascript/jquery.tools.min.js" type="text/javascript"></script>
+
+
+<script src="javascript/elearning.js" type="text/javascript"></script>
+<script src="javascript/funciones.js" type="text/javascript"></script>
+<script src="javascript/extendidas.js" type="text/javascript"></script>
+
+
+
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/elearning.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<title></title>
+<script>
+	$(function() {
+		//$( ".secciones div" ).draggable({});
+		
+	});
+</script>
+
+
+
+</head>
+<body>
+
+
+<div id="" class="curso">
+ 	<div id="flechas" style="top: 245px; position: absolute;">	  
+		<div id="derecha" class="flecha" style="left: 910px; display:none;">
+	   		<img src="img/btn_seccion-sig.png">
+	  	</div>
+	  	<div id="izquierda" class="flecha" style="left: -2px; display:none;">
+	   		<img src="img/btn_seccion-ant.png">
+	  	</div>
+	</div>
+
+
+	<!-- Secciones -->
+    <div class="secciones">
+        
+        <!-- Preguntas -->
+    	<div class="seccion" data-audio="124" id="seccion_preguntas_prt_5">
+            <div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+            
+           <!-- inicio -->  
+           <div class="interna" id="inicio_pregunta">
+                 <div class="" style="left: 73px; top: 88px;"><img src="img/05/inicio.png"></div>
+				 
+                 
+                 <div class="" style="left: 772px; top: 436px;"><img src="img/btn_iniciar.png"></div>
+                  
+                 <div class="boton iniciar_evaluacion" style="left: 772px; top: 436px; display:none;">
+                 	<img src="img/btn_iniciar.png" style="display:none;">
+                    <img src="img/btn_iniciar_h.png" style="left:2px;">
+                 </div>
+                 
+                      
+                        
+           </div>
+           
+           
+           <!-- pregunta 1 -->  
+           <div class="interna"  id="pregunta_1">
+                 <div class="" style="left: 22px; top: 56px;"><img src="img/05/fondo_preg.png"></div>
+                 
+                 <!-- belliza 1 -->
+                 <div class="msn_bellisa_1" style="left: 36px; top: 230px;"><img src="img/05/belissa_1.png"></div>
+                 <div class="msn_bellisa_1" style="left: 205px; top: 413px;"><img src="img/05/globo_escoge.png"></div>
+                 
+                 <!-- belliza 2 -->
+                 <div class="msn_bellisa_2" style="left: 36px; top: 230px; display:none;"><img src="img/05/belissa_2.png"></div>
+                 <div class="msn_bellisa_2" style="left: 225px; top: 409px; display:none;"><img src="img/05/globo_resp_corr.png"></div>
+                 
+         
+                 <!-- Pregunta -->
+                 <div class="" style="left: 344px; top: 100px;"><img src="img/05/pregunta_1/pregunta_1.png"></div>
+                 
+                 <!-- respuesta -->
+                 <div class="" style="left: 416px; top: 227px;"><img src="img/05/pregunta_1/resp_1.png"></div>
+                 <div class="" style="left: 419px; top: 295px;"><img src="img/05/pregunta_1/resp_2.png"></div>
+                 <div class="" style="left: 429px; top: 379px;"><img src="img/05/pregunta_1/resp_3.png"></div>
+                 
+                 <!-- Fondo respuesta -->
+                 <div class="fondo_resp" style="left: 348px; top: 281px; display:none;"><img src="img/05/fondo_resp_1.png"></div>
+                 
+				 <!-- botone -->
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 219px;">
+                 	<img src="img/05/resp_a.png">
+                    <img src="img/05/resp_a_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=1 style="left: 354px; top: 292px;">
+                 	<img src="img/05/resp_b.png">
+                    <img src="img/05/resp_b_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 355px; top: 366px;">
+                 	<img src="img/05/resp_c.png">
+                    <img src="img/05/resp_c_h.png" style="display:none;">
+                 </div>
+                 
+                 <!-- Boton Reponder -->
+                 <div class="" style="left: 748px; top: 433px;">
+                 	<img src="img/btn_responder.png">
+                 </div>  
+                 
+                  <div class="boton responder_preg_eva" style="left: 748px; top: 433px; display:none;">
+                    <img src="img/btn_responder_h.png">
+                 </div>   
+                 
+                 <div class="shadow_correctas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 297px; top: 137px;"><img src="img/05/img_02-texto.png"></div>
+                    
+                 </div>
+                 
+                 <div class="shadow_incorrectas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 299px; top: 138px;"><img src="img/incorrecta.png"></div>
+                    
+                    <div class="volver_eva" style="top: 450px;left: 515px;">
+                    	<img src="img/btn_volver.png">
+                        <img src="img/btn_volver_h.png" style="display:none;">
+                    </div>
+                    
+                 </div>
+                 
+           </div>
+           
+           <!-- pregunta 2 -->  
+           <div class="interna"  id="pregunta_2">
+                 <div class="" style="left: 22px; top: 56px;"><img src="img/05/fondo_preg.png"></div>
+                 
+                 <!-- belliza 1 -->
+                 <div class="msn_bellisa_1" style="left: 36px; top: 230px;"><img src="img/05/belissa_1.png"></div>
+                 <div class="msn_bellisa_1" style="left: 205px; top: 413px;"><img src="img/05/globo_escoge.png"></div>
+                 
+                 <!-- belliza 2 -->
+                 <div class="msn_bellisa_2" style="left: 36px; top: 230px; display:none;"><img src="img/05/belissa_2.png"></div>
+                 <div class="msn_bellisa_2" style="left: 225px; top: 409px; display:none;"><img src="img/05/globo_resp_corr.png"></div>
+                 
+                 
+                 
+                 <!-- Pregunta -->
+                 <div class="" style="left: 344px; top: 100px;"><img src="img/05/pregunta_2/pregunta_2.png"></div>
+                 
+                 <!-- respuesta -->
+                 <div class="" style="left: 416px; top: 227px;"><img src="img/05/pregunta_2/resp_1.png"></div>
+                 <div class="" style="left: 419px; top: 295px;"><img src="img/05/pregunta_2/resp_2.png"></div>
+                 <div class="" style="left: 429px; top: 379px;"><img src="img/05/pregunta_2/resp_3.png"></div>
+                 
+                 <!-- Fondo respuesta -->
+                 <div class="fondo_resp" style="left: 348px; top: 281px; display:none;"><img src="img/05/fondo_resp_2.png"></div>
+                 
+				 <!-- botone -->
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 219px;">
+                 	<img src="img/05/resp_a.png">
+                    <img src="img/05/resp_a_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=1 style="left: 354px; top: 292px;">
+                 	<img src="img/05/resp_b.png">
+                    <img src="img/05/resp_b_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 355px; top: 366px;">
+                 	<img src="img/05/resp_c.png">
+                    <img src="img/05/resp_c_h.png" style="display:none;">
+                 </div>
+                 
+                 <!-- Boton Reponder -->
+                 <div class="" style="left: 748px; top: 433px;">
+                 	<img src="img/btn_responder.png">
+                 </div>  
+                 
+                  <div class="boton responder_preg_eva" style="left: 748px; top: 433px; display:none;">
+                    <img src="img/btn_responder_h.png">
+                 </div>   
+                 
+                 
+                 <div class="shadow_correctas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 297px; top: 137px;"><img src="img/05/img_02-texto.png"></div>
+                    
+                 </div>
+                 
+                 <div class="shadow_incorrectas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 299px; top: 138px;"><img src="img/incorrecta.png"></div>
+                    
+                    <div class="volver_eva" style="top: 450px;left: 515px;">
+                    	<img src="img/btn_volver.png">
+                        <img src="img/btn_volver_h.png" style="display:none;">
+                    </div>
+                    
+                 </div>
+                 
+           </div>
+           
+           <!-- pregunta 3 -->  
+           <div class="interna"  id="pregunta_3">
+                 <div class="" style="left: 22px; top: 56px;"><img src="img/05/fondo_preg.png"></div>
+                 
+                 <!-- belliza 1 -->
+                 <div class="msn_bellisa_1" style="left: 36px; top: 230px;"><img src="img/05/belissa_1.png"></div>
+                 <div class="msn_bellisa_1" style="left: 205px; top: 413px;"><img src="img/05/globo_escoge.png"></div>
+                 
+                 <!-- belliza 2 -->
+                 <div class="msn_bellisa_2" style="left: 36px; top: 230px; display:none;"><img src="img/05/belissa_2.png"></div>
+                 <div class="msn_bellisa_2" style="left: 225px; top: 409px; display:none;"><img src="img/05/globo_resp_corr.png"></div>
+                 
+                 
+                 
+                 <!-- Pregunta -->
+                 <div class="" style="left: 344px; top: 100px;"><img src="img/05/pregunta_3/pregunta_3.png"></div>
+                 
+                 <!-- respuesta -->
+                 <div class="" style="left: 416px; top: 227px;"><img src="img/05/pregunta_3/resp_1.png"></div>
+                 <div class="" style="left: 419px; top: 295px;"><img src="img/05/pregunta_3/resp_2.png"></div>
+                 <div class="" style="left: 429px; top: 379px;"><img src="img/05/pregunta_3/resp_3.png"></div>
+                 
+                 <!-- Fondo respuesta -->
+                 <div class="fondo_resp" style="left: 349px; top: 353px; display:none;"><img src="img/05/fondo_resp_3.png"></div>
+                 
+				 <!-- botone -->
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 219px;">
+                 	<img src="img/05/resp_a.png">
+                    <img src="img/05/resp_a_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 292px;">
+                 	<img src="img/05/resp_b.png">
+                    <img src="img/05/resp_b_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=1 style="left: 355px; top: 366px;">
+                 	<img src="img/05/resp_c.png">
+                    <img src="img/05/resp_c_h.png" style="display:none;">
+                 </div>
+                 
+                 <!-- Boton Reponder -->
+                 <div class="" style="left: 748px; top: 433px;">
+                 	<img src="img/btn_responder.png">
+                 </div>  
+                 
+                  <div class="boton responder_preg_eva" style="left: 748px; top: 433px; display:none;">
+                    <img src="img/btn_responder_h.png">
+                 </div>  
+                 
+                 
+                 <div class="shadow_correctas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 297px; top: 137px;"><img src="img/05/img_02-texto.png"></div>
+                    
+                 </div> 
+                 
+                 <div class="shadow_incorrectas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 299px; top: 138px;"><img src="img/incorrecta.png"></div>
+                    
+                    <div class="volver_eva" style="top: 450px;left: 515px;">
+                    	<img src="img/btn_volver.png">
+                        <img src="img/btn_volver_h.png" style="display:none;">
+                    </div>
+                    
+                 </div>
+                 
+           </div>
+           
+           <!-- pregunta 4 -->  
+           <div class="interna"  id="pregunta_4">
+                 <div class="" style="left: 22px; top: 56px;"><img src="img/05/fondo_preg.png"></div>
+                 
+                 <!-- belliza 1 -->
+                 <div class="msn_bellisa_1" style="left: 36px; top: 230px;"><img src="img/05/belissa_1.png"></div>
+                 <div class="msn_bellisa_1" style="left: 205px; top: 413px;"><img src="img/05/globo_escoge.png"></div>
+                 
+                 <!-- belliza 2 -->
+                 <div class="msn_bellisa_2" style="left: 36px; top: 230px; display:none;"><img src="img/05/belissa_2.png"></div>
+                 <div class="msn_bellisa_2" style="left: 225px; top: 409px; display:none;"><img src="img/05/globo_resp_corr.png"></div>
+                 
+                 
+                 
+                 <!-- Pregunta -->
+                 <div class="" style="left: 344px; top: 100px;"><img src="img/05/pregunta_4/pregunta_4.png"></div>
+                 
+                 <!-- respuesta -->
+                 <div class="" style="left: 416px; top: 227px;"><img src="img/05/pregunta_4/resp_1.png"></div>
+                 <div class="" style="left: 419px; top: 295px;"><img src="img/05/pregunta_4/resp_2.png"></div>
+                 <div class="" style="left: 429px; top: 379px;"><img src="img/05/pregunta_4/resp_3.png"></div>
+                 
+                 <!-- Fondo respuesta -->
+                 <div class="fondo_resp" style="left: 350px; top: 352px; display:none;"><img src="img/05/fondo_resp_4.png"></div>
+                 
+				 <!-- botone -->
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 219px;">
+                 	<img src="img/05/resp_a.png">
+                    <img src="img/05/resp_a_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 292px;">
+                 	<img src="img/05/resp_b.png">
+                    <img src="img/05/resp_b_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=1 style="left: 355px; top: 366px;">
+                 	<img src="img/05/resp_c.png">
+                    <img src="img/05/resp_c_h.png" style="display:none;">
+                 </div>
+                 
+                 <!-- Boton Reponder -->
+                 <div class="" style="left: 748px; top: 433px;">
+                 	<img src="img/btn_responder.png">
+                 </div>  
+                 
+                  <div class="boton responder_preg_eva" style="left: 748px; top: 433px; display:none;">
+                    <img src="img/btn_responder_h.png">
+                 </div>   
+                 
+                 <div class="shadow_correctas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 297px; top: 137px;"><img src="img/05/img_02-texto.png"></div>
+                    
+                 </div>
+                 
+                 <div class="shadow_incorrectas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                   
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 299px; top: 138px;"><img src="img/incorrecta.png"></div>
+                    
+                    <div class="volver_eva" style="top: 450px;left: 515px;">
+                    	<img src="img/btn_volver.png">
+                        <img src="img/btn_volver_h.png" style="display:none;">
+                    </div>
+                    
+                 </div>
+                 
+           </div>
+           
+           <!-- pregunta 5 -->  
+           <div class="interna"  id="pregunta_5">
+                 <div class="" style="left: 22px; top: 56px;"><img src="img/05/fondo_preg.png"></div>
+                 
+                 <!-- belliza 1 -->
+                 <div class="msn_bellisa_1" style="left: 36px; top: 230px;"><img src="img/05/belissa_1.png"></div>
+                 <div class="msn_bellisa_1" style="left: 205px; top: 413px;"><img src="img/05/globo_escoge.png"></div>
+                 
+                 <!-- belliza 2 -->
+                 <div class="msn_bellisa_2" style="left: 36px; top: 230px; display:none;"><img src="img/05/belissa_2.png"></div>
+                 <div class="msn_bellisa_2" style="left: 225px; top: 409px; display:none;"><img src="img/05/globo_resp_corr.png"></div>
+                 
+                 
+                 
+                 <!-- Pregunta -->
+                 <div class="" style="left: 344px; top: 100px;"><img src="img/05/pregunta_5/pregunta_5.png"></div>
+                 
+                 <!-- respuesta -->
+                 <div class="" style="left: 416px; top: 227px;"><img src="img/05/pregunta_5/resp_1.png"></div>
+                 <div class="" style="left: 419px; top: 295px;"><img src="img/05/pregunta_5/resp_2.png"></div>
+                 <div class="" style="left: 429px; top: 379px;"><img src="img/05/pregunta_5/resp_3.png"></div>
+                 
+                 <!-- Fondo respuesta -->
+                 <div class="fondo_resp" style="left: 342px; top: 351px; display:none;"><img src="img/05/fondo_resp_5.png"></div>
+                 
+				 <!-- botone -->
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 219px;">
+                 	<img src="img/05/resp_a.png">
+                    <img src="img/05/resp_a_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 292px;">
+                 	<img src="img/05/resp_b.png">
+                    <img src="img/05/resp_b_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=1 style="left: 355px; top: 366px;">
+                 	<img src="img/05/resp_c.png">
+                    <img src="img/05/resp_c_h.png" style="display:none;">
+                 </div>
+                 
+                 <!-- Boton Reponder -->
+                 <div class="" style="left: 748px; top: 433px;">
+                 	<img src="img/btn_responder.png">
+                 </div>  
+                 
+                  <div class="boton responder_preg_eva" style="left: 748px; top: 433px; display:none;">
+                    <img src="img/btn_responder_h.png">
+                 </div> 
+                 
+                 <div class="shadow_correctas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 297px; top: 137px;"><img src="img/05/img_02-texto.png"></div>
+                    
+                 </div>  
+                 
+                 <div class="shadow_incorrectas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 299px; top: 138px;"><img src="img/incorrecta.png"></div>
+                    
+                    <div class="volver_eva" style="top: 450px;left: 515px;">
+                    	<img src="img/btn_volver.png">
+                        <img src="img/btn_volver_h.png" style="display:none;">
+                    </div>
+                    
+                 </div>
+                 
+           </div>
+           
+           <!-- pregunta 6 -->  
+           <div class="interna " id="pregunta_6" style="display: block; left: 0px; opacity: 1;">
+                 <div class="" style="left: 22px; top: 56px;"><img src="img/05/fondo_preg.png"></div>
+                 
+                 <!-- belliza 1 -->
+                 <div class="msn_bellisa_1 " style="left: 36px; top: 230px;"><img src="img/05/belissa_1.png"></div>
+                 <div class="msn_bellisa_1 " style="left: 205px; top: 413px;"><img src="img/05/globo_escoge.png"></div>
+                 
+                 <!-- belliza 2 -->
+                 <div class="msn_bellisa_2 " style="left: 36px; top: 230px; display:none;"><img src="img/05/belissa_2.png"></div>
+                 <div class="msn_bellisa_2 " style="left: 225px; top: 409px; display:none;"><img src="img/05/globo_resp_corr.png"></div>
+                 
+                 
+                 
+                 <!-- Pregunta -->
+                 <div class="" style="left: 344px; top: 100px;"><img src="img/05/pregunta_6/pregunta_6.png"></div>
+                 
+                 <!-- respuesta -->
+                 <div class="" style="left: 416px; top: 198px;"><img src="img/05/pregunta_6/resp_1.png"></div>
+                 <div class="" style="left: 416px; top: 258px;"><img src="img/05/pregunta_6/resp_2.png"></div>
+                 <div class="" style="left: 416px; top: 329px;"><img src="img/05/pregunta_6/resp_3.png"></div>
+                 <div class="" style="left: 416px; top: 386px;"><img src="img/05/pregunta_6/resp_4.png"></div>
+                 
+                 <!-- Fondo respuesta -->
+                 <div class="fondo_resp " style="left: 340px; top: 358px; display:none;"><img src="img/05/fondo_resp_6.png"></div>
+                 
+				 <!-- botone -->
+                 <div class="boton respuesta_eva  " data-correcta="0" style="left: 349px; top: 195px;">
+                 	<img src="img/05/resp_a.png">
+                    <img src="img/05/resp_a_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva  " data-correcta="0" style="left: 349px; top: 252px;">
+                 	<img src="img/05/resp_b.png">
+                    <img src="img/05/resp_b_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva  " data-correcta="0" style="left: 349px; top: 317px;">
+                 	<img src="img/05/resp_c.png">
+                    <img src="img/05/resp_c_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva  " data-correcta="1" style="left: 349px; top: 373px;">
+                 	<img src="img/05/resp_d.png">
+                    <img src="img/05/resp_d_h.png" style="display:none;">
+                 </div>
+                 
+                 <!-- Boton Reponder -->
+                 <div class="" style="left: 748px; top: 433px;">
+                 	<img src="img/btn_responder.png">
+                 </div>  
+                 
+                  <div class="boton responder_preg_eva " style="left: 748px; top: 433px; display:none;">
+                    <img src="img/btn_responder_h.png">
+                 </div>  
+                 
+                 <div class="shadow_correctas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 297px; top: 137px;"><img src="img/05/img_02-texto.png"></div>
+                    
+                 </div> 
+                 
+                 <div class="shadow_incorrectas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 299px; top: 138px;"><img src="img/incorrecta.png"></div>
+                    
+                    <div class="volver_eva" style="top: 450px;left: 515px;">
+                    	<img src="img/btn_volver.png">
+                        <img src="img/btn_volver_h.png" style="display:none;">
+                    </div>
+                    
+                 </div>
+                 
+           </div>
+           
+           <!-- pregunta 7 -->  
+           <div class="interna"  id="pregunta_7">
+                 <div class="" style="left: 22px; top: 56px;"><img src="img/05/fondo_preg.png"></div>
+                 
+                 <!-- belliza 1 -->
+                 <div class="msn_bellisa_1" style="left: 36px; top: 230px;"><img src="img/05/belissa_1.png"></div>
+                 <div class="msn_bellisa_1" style="left: 205px; top: 413px;"><img src="img/05/globo_escoge.png"></div>
+                 
+                 <!-- belliza 2 -->
+                 <div class="msn_bellisa_2" style="left: 36px; top: 230px; display:none;"><img src="img/05/belissa_2.png"></div>
+                 <div class="msn_bellisa_2" style="left: 225px; top: 409px; display:none;"><img src="img/05/globo_resp_corr.png"></div>
+                 
+                 
+                 
+                 <!-- Pregunta -->
+                 <div class="" style="left: 344px; top: 100px;"><img src="img/05/pregunta_7/pregunta_7.png"></div>
+                 
+                 <!-- respuesta -->
+                 <div class="" style="left: 416px; top: 227px;"><img src="img/05/pregunta_7/resp_1.png"></div>
+                 <div class="" style="left: 419px; top: 295px;"><img src="img/05/pregunta_7/resp_2.png"></div>
+                 <div class="" style="left: 429px; top: 379px;"><img src="img/05/pregunta_7/resp_3.png"></div>
+                 
+                 <!-- Fondo respuesta -->
+                 <div class="fondo_resp" style="left: 347px; top: 284px; display:none;"><img src="img/05/fondo_resp_7.png"></div>
+                 
+				 <!-- botone -->
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 354px; top: 219px;">
+                 	<img src="img/05/resp_a.png">
+                    <img src="img/05/resp_a_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=1 style="left: 354px; top: 292px;">
+                 	<img src="img/05/resp_b.png">
+                    <img src="img/05/resp_b_h.png" style="display:none;">
+                 </div>
+                 
+                 <div class="boton respuesta_eva " data-correcta=0 style="left: 355px; top: 366px;">
+                 	<img src="img/05/resp_c.png">
+                    <img src="img/05/resp_c_h.png" style="display:none;">
+                 </div>
+                 
+                 <!-- Boton Reponder -->
+                 <div class="" style="left: 748px; top: 433px;">
+                 	<img src="img/btn_responder.png">
+                 </div>  
+                 
+                  <div class="boton responder_preg_eva" style="left: 748px; top: 433px; display:none;">
+                    <img src="img/btn_responder_h.png">
+                 </div>   
+                 
+                 <div class="shadow_correctas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 297px; top: 137px;"><img src="img/05/img_02-texto.png"></div>
+                    
+                 </div>
+                 
+                 <div class="shadow_incorrectas" style="width:960px; height:550px; display:none;">
+                 	<div class="fondo"><img src="img/bg_lineas-morado.jpg"></div>
+                    
+                    <div class="" style="left: 49px; top: 134px;"><img src="img/03/img_10-fondo-respuesta.png"></div>
+                    <div class="" style="left: 299px; top: 138px;"><img src="img/incorrecta.png"></div>
+                    
+                    <div class="volver_eva" style="top: 450px;left: 515px;">
+                    	<img src="img/btn_volver.png">
+                        <img src="img/btn_volver_h.png" style="display:none;">
+                    </div>
+                    
+                 </div>
+                 
+           </div>
+           
+            <!-- Fin 01 -->  
+
+           <div class="interna estrellas felicitacion" id="felicitacion-8" data-flechas="derecha">
+                <div class="fondo"> 
+                    <img src="img/bg_lineas-morado.jpg">
+                </div>
+                <div class="texto" data-felicitacion="si">
+                    <div class="" style="left: 125px; top: 179px;"> 
+                        <img src="img/estrellas/img_texto-felicitacion-actividad-modulo5.png">
+                    </div>
+                </div>
+                <span class="estrellas-acumuladas" style="">00</span>
+                <div class="texto-felicitacion" style="left: 428px; top: 298px;"><span>Tuviste <span class="tot_resp_corr" style="">0</span> respuestas correctas.</span></div>
+                <div class="texto-felicitacion" style="left: 428px; top: 327px;"><span>Has ganado <span class="est_gan" style="">0</span> estrellas más.</span></div>
+            </div>
+           
+           
+           <!-- Fin 02 -->  
+            <div class="interna estrellas felicitacion" id="felicitacion-mod-5" data-flechas="derecha">
+                <div class="fondo"> 
+                    <img src="img/bg_lineas-morado.jpg">
+                </div>
+                <div class="texto" data-felicitacion="si">
+                    <div class="" style="left: 123px; top: 207px;"> 
+                       <img src="img/estrellas/img_texto-felicitacion-modulo-final.png">
+                    </div>
+                    
+                </div>
+                <span class="estrellas-acumuladas" style="">00</span>
+            </div>
+           
+           <!-- Fin belliza -->  
+           <div class="interna" id="ultimo_1_eva" data-audio="134">
+                 <div class="" style="left: 95px; top: 4px;"><img src="img/05/ultimo_belliza.png"></div>
+                 
+           </div>
+           
+           <!-- Fin belliza 2-->  
+           <div class="interna" id="ultimo_2_eva" data-audio="135">
+                 <div class="" style="left: 92px; top: 30px;"><img src="img/05/ultimo_belliza_2.png"></div>
+                 
+           </div>
+           
+           <!-- Fin belliza 3-->  
+           <div class="interna" id="ultimo_3_eva" data-audio="">
+                 <div class="" style="left: 92px; top: 30px;"><img src="img/05/ultimo_belliza_3.png"></div>
+                 
+                 <div class="boton irEncuesta terminarCurso" style="left: 450px; top: 455px;">
+                 	<img src="img/btn_iraencuesta.png">
+                    <img src="img/btn_iraencuesta_h.png" style="display:none; left:2px;">
+                 </div>
+                
+                 
+           </div>
+           
+           
+           <!-- Flechas -->
+           <div class="flechas-internas">
+              <div class="Izquierda" style="left: -2px; top: 245px; display:none; cursor:pointer;"> 
+                  <img src="img/btn_seccion-ant.png">
+              </div>
+              
+              <div class="derecha" style="left: 910px; top: 245px; display:none; cursor:pointer;"> 
+                  <img src="img/btn_seccion-sig.png">
+              </div>
+          
+           </div>
+            
+            
+        </div>
+       
+       
+       <div class="seccion" style="background-color:#990099; z-index:900;" data-audio=""></div>
+         
+    </div>
+
+    <!-- Secciones -->
+</div>
+
+
+<script src="t.js" type="text/javascript"></script>
+<div id="pano" style="width:1px; height:1px;position:absolute; z-index:1000"></div>
+<script>
+	// <![CDATA[
+	var viewer = createPanoViewer({swf:"t.swf", id:"krpanoSWFObject", target:"pano"});
+	// set the default xml file
+	viewer.addVariable("xml", "t.xml");
+	// pass all parameters from the html file to the viewer
+	viewer.passQueryParameters();
+	// embed and start the viewer
+	viewer.embed();
+	function playSong(intt)
+	{
+		var krpano = document.getElementById("krpanoSWFObject");
+		if (!krpano || !krpano.get)
+		{
+			return "";
+		}
+		krpano.call("playSong(" + intt + ");");
+	}
+	function stopSong(){
+		var krpano = document.getElementById("krpanoSWFObject");
+		if (!krpano || !krpano.get)
+		{
+			return "";
+		}
+		krpano.call("stopSong();");
+	}
+	
+// ]]>
+</script>
+
+
+</body>
+</html>
