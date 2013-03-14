@@ -29,47 +29,7 @@
 <title></title>
 <script>
 	$(function() {
-		//$( ".secciones div" ).draggable({});
-
-        function IniciarObjetivosModulo () {
-            
-            var intentosModulo = LMSGetValue("cmi.objectives.6.id");
-            //alert(intentosScorm);
-            var estrellasModulo = LMSGetValue("cmi.objectives.7.id");
-            
-            alert(intentosModulo);
-            alert(estrellasModulo);
-        
-            var get_intentosModulo_score;
-            var get_estrellasModulo_score;
-            
-            if (intentosModulo != "intentosModulo-4" ) {
-                alert("No Existe el objetivo;");
-                var set_intentosModulo = LMSSetValue("cmi.objectives.6.id", "intentosModulo-4");
-                var set_estrellasModulo = LMSSetValue("cmi.objectives.7.id", "estrellasModulo-4");
-                
-                var set_intentosModulo_score = LMSSetValue("cmi.objectives.6.score.raw", 0);
-                get_intentosModulo_score = LMSGetValue("cmi.objectives.6.score.raw");
-                
-                var set_estrellasModulo_score = LMSSetValue("cmi.objectives.7.score.raw", 0);
-                get_estrellasModulo_score = LMSGetValue("cmi.objectives.7.score.raw");
-                
-                alert("Intentos: " + get_intentosModulo_score); 
-                alert("Estrellas: " + get_estrellasModulo_score);                   
-            } else {
-                get_intentosModulo_score = LMSGetValue("cmi.objectives.6.score.raw");
-                get_estrellasModulo_score = LMSGetValue("cmi.objectives.7.score.raw");
-                alert("Ya haz completado este modulo " + get_intentosModulo_score + " veces.\nTienes un total de " + get_estrellasModulo_score + " estrellas.");            
-            };
-            var n_error = LMSGetLastError("");
-            alert("Error: "+n_error);
-            
-            LMSCommit("");
-
-        }
-
-        IniciarObjetivosModulo();       
-		
+		//$( ".secciones div" ).draggable({});		
 	});
 </script>
 

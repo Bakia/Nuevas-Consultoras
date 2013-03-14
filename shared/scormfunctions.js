@@ -1,6 +1,13 @@
 var nFindAPITries=0, objAPI=null, bFinishDone=false;
 var status;
 
+var intentosCompletados = LMSGetValue("cmi.objectives.0.score.raw");
+
+if (intentosCompletados == "undefined" || intentosCompletados == "" || isNaN(intentosCompletados) || intentosCompletados == 0) {
+	intentosCompletados = 0;
+};
+
+
 var startTime = Date.now();
 
 
@@ -103,17 +110,30 @@ $(document).ready(function(e) {
 		});
 	});
 function terminar(){
+	intentosCompletados+=1;
+	// alert("intentosCompletados: " + intentosCompletados);
+	
+	var set_intentosCompletados = LMSSetValue("cmi.objectives.0.score.raw", intentosCompletados );
+	var get_intentosCompletados = LMSGetValue("cmi.objectives.0.score.raw");
+	// alert("get_intentosCompletados: " + get_intentosCompletados);
+	
+	if (get_intentosCompletados < 2) {
+		// alert("indexEstrellas: " + indexEstrellas);
+		estrellasGenerales = indexEstrellas;
+		// alert("estrellasGenerales: " + estrellasGenerales);
+		var set_EstrellaGanadas = LMSSetValue("cmi.core.score.raw", estrellasGenerales);
+	};
+
+
 	if(status!="completed"){
 		updateSessionTime();
-		
 		status="completed";
 	}
-	
+
 	LMSSetValue('cmi.core.lesson_status',status);
-	objAPI.LMSFinish("");
-	
-	
+	objAPI.LMSFinish("");	
 }
+
 function cerrar(){
 	if(status!="completed"){
 		

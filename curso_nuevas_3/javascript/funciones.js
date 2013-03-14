@@ -55,6 +55,34 @@ function audios(cual){
 
 function iniciar(){
 	
+
+	 function IniciarObjetivosModulo () {
+            
+            var intentosModulo = LMSGetValue("cmi.objectives.0.id");            
+            //alert(intentosModulo);
+            var estrellasModulo = LMSGetValue("cmi.objectives.1.id");
+                 
+            var get_intentosModulo_score;           
+            if (intentosModulo != "intentosModulo" ) {
+                // alert("No existen los objetivo, los voy a crear.");
+                var set_intentosModulo = LMSSetValue("cmi.objectives.0.id", "intentosModulo");
+                
+                var set_intentosModulo_score = LMSSetValue("cmi.objectives.0.score.raw", 0);
+                get_intentosModulo_score = LMSGetValue("cmi.objectives.0.score.raw");
+                
+                // alert("Objetivos creados exitosamente!\nIntentos: " + get_intentosModulo_score);
+                
+            } else {
+                get_intentosModulo_score = LMSGetValue("cmi.objectives.0.score.raw");
+                // alert("Ya has completado este modulo " + get_intentosModulo_score + " veces.");            
+            };
+      
+            
+            LMSCommit("");
+
+        }
+
+        IniciarObjetivosModulo();   
 	
 	
 	nombre_consultora = LMSGetValue("cmi.core.student_name");

@@ -1,3 +1,4 @@
+var estrellasGenerales;
 var indexEstrellas = 0;
 
 /*INICIO VARIABLES MODULO 2*/
@@ -1709,19 +1710,7 @@ function dragCartera () {
 			$("#felicitacion-6 .correcto").show();
 			$("#felicitacion-6 .incorrecto").hide();
 			
-			var inter =LMSGetValue("cmi.interactions._count");
-			alert(inter);
-			if(inter != 2){
-				indexEstrellas+=5;
-				alert("no completo");
-				LMSSetValue("cmi.interactions._count",2);
-				alert(LMSSetValue("cmi.interactions._count"));
-			}else{
-				indexEstrellas+=0;
-				alert("completo");
-			}
-		
-			
+			indexEstrellas+=5;	
 			$("#felicitacion-6 .estrellas-acumuladas").text(indexEstrellas);
 		}
 
@@ -1736,30 +1725,26 @@ function dragCartera () {
 		
 		if (intentos >=2) {
 			
-			
-			
 			if (indexCorrectas == 5) {
-				
 				dragOK();
-				
-				LMSSetValue("cmi.interactions."+intentos+".result", "correct");
-				
+
 			} else {
 				dragNO();
 				TweenLite.to(dragCartera.find(".interna").eq(3), 0.7, { css:{ display:"block", left: "0", opacity: "1"} } )
-				$("#derecha").delay(1000).fadeIn(300);
-				LMSSetValue("cmi.interactions."+intentos+".result", "wrong");
-				
+				$("#derecha").delay(1000).fadeIn(300);			
+
 			};
 			
-			
 		} else {
+		
 			if (indexCorrectas == 5) {
 				dragOK();
+		
 			} else {
 				dragNO();
 				TweenLite.to(dragCartera.find(".interna").eq(1), 0.7, { css:{ display:"block", left: "0", opacity: "1"} } )
 				dragCartera.find(".interna").eq(1).find(".volver").delay(1000).fadeIn(300);
+		
 			};
 		};
 		
@@ -1853,7 +1838,6 @@ function respuestasDialogosCarolina () {
 				dialogosNO();
 				TweenLite.to(respuestasCarolina.find(".interna").eq(3), 0.7, { css:{ display:"block", left: "0", opacity: "1"} } )
 				$("#derecha").delay(1000).fadeIn(300);
-				$("#felicitacion-7 .estrellas-acumuladas").text(indexEstrellas);
 			}
 		} else {
 			if(cuantasCorrectas == 9 ){
@@ -2220,47 +2204,8 @@ function enviar_mail(nombre, correo, asunto, contenido){
 				
 			}
 	});
-	
-}
 
+	alert("Mensaje enviado exitosamente.");
 
-
-
-/*	objetivos	*/
-
-function IniciarObjetivosModulo (num_modulo) {
-	alert(num_modulo);
-	
-	var intentosModulo = LMSGetValue("cmi.objectives." + num_modulo + "0.id");
-	//alert(intentosScorm);
-	var estrellasModulo = LMSGetValue("cmi.objectives." + num_modulo + "1.id");
-	
-	alert(intentosModulo);
-	alert(estrellasModulo);
-
-	var get_intentosModulo_score;
-	var get_estrellasModulo_score;
-	
-	if (intentosModulo != "intentosModulo-" + num_modulo ) {
-		alert("No Existe el objetivo;");
-		var set_intentosModulo = LMSSetValue("cmi.objectives." + num_modulo + "0.id", "intentosModulo-" + num_modulo);
-		var set_estrellasModulo = LMSSetValue("cmi.objectives." + num_modulo + "1.id", "estrellasModulo-" + num_modulo);
-		
-		var set_intentosModulo_score = LMSSetValue("cmi.objectives." + num_modulo + "0.score.raw", 0);
-		get_intentosModulo_score = LMSGetValue("cmi.objectives." + num_modulo + "0.score.raw");
-		
-		var set_estrellasModulo_score = LMSSetValue("cmi.objectives." + num_modulo + "1.score.raw", 0);
-		get_estrellasModulo_score = LMSGetValue("cmi.objectives." + num_modulo + "1.score.raw");
-		
-		alert("Intentos: " + get_intentosModulo_score);	
-		alert("Estrellas: " + get_estrellasModulo_score);					
-	} else {
-		get_intentosModulo_score = LMSGetValue("cmi.objectives." + num_modulo + "0.score.raw");
-		get_estrellasModulo_score = LMSGetValue("cmi.objectives." + num_modulo + "1.score.raw");
-		alert("Ya haz completado este modulo " + get_intentosScorm_score + " veces.\nTienes un total de " + get_estrellasModulo_score + " estrellas.");			
-	};
-	LMSCommit("");
 
 }
-
-	

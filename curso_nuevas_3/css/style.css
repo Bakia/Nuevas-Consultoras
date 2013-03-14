@@ -197,7 +197,7 @@ input[type="text"]:focus{
 
 .mi-meta-es{
 	color: #ffffff;
-	font-family: 'Museo Sans 700';
+	font-family: 'Museo Sans 700', Arial, sans-serif;
 	font-size: 25px;
 	left: 430px;
 	position: absolute;
@@ -223,6 +223,21 @@ input[type="text"]:focus{
 	cursor:pointer;
 }
 
+.contacto-apellido input {
+	padding: 0 0.5em;
+	width: 194px;
+}
+
+.contacto-nombre input {
+	padding: 0 .5em;
+	width: 194px;
+}
+
+.contacto-telefono input {
+	left: 2px;
+	padding: 0 .5em;
+	width: 100px;
+}
 
 
 .btnEditarLinea{
