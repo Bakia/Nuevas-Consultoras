@@ -1818,6 +1818,7 @@ function respuestasDialogosCarolina () {
 			$("#derecha").delay(1000).fadeIn(300);
 			$("#felicitacion-7 .correcto").show();
 			$("#felicitacion-7 .incorrecto").hide();
+			$("#felicitacion-7 .nombre-consultora").hide();
 			
 			indexEstrellas+=5;
 			$("#felicitacion-7 .estrellas-acumuladas").text(indexEstrellas);
