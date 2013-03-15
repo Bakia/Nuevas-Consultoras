@@ -527,6 +527,7 @@ input{
     position: relative;
     display: inline-block;
     vertical-align: top;
+	z-index:9999;
 }
 
 #calnext {
