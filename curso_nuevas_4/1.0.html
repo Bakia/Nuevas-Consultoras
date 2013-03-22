@@ -1,0 +1,820 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="javascript/jquery-migrate-1.1.0.js"></script>
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/elearning.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<script src="../shared/scormfunctions.js" type="text/javascript"></script>
+<script src="javascript/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="javascript/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="javascript/jquery.timer.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascript/gs/TweenMax.min.js"></script>
+<script src="javascript/preloader.js" type="text/javascript"></script>
+<script src="javascript/jquery.tools.min.js" type="text/javascript"></script>
+
+
+<script src="javascript/elearning.js" type="text/javascript"></script>
+<script src="javascript/funciones.js" type="text/javascript"></script>
+<script src="javascript/extendidas.js" type="text/javascript"></script>
+
+
+
+<title></title>
+<script>
+	$(function() {
+		//$( ".secciones div" ).draggable({});		
+	});
+</script>
+
+
+
+</head>
+<body>
+
+
+<div id="" class="curso">
+ 	
+
+    <div id="barra-perfil">
+   		<img src="img/bg_perfil.png">
+   		<div id="textos-perfil">
+   			<div class="texto">
+   				<img src="img/perfil/texto-perfil-01.png" alt="">
+   			</div>
+   		</div>
+    </div>
+
+	<!-- Secciones -->
+    <div class="secciones">
+        
+
+        <div class="seccion" id="introduccion">
+			<div class="fondo"> 
+				<img src="img/bg_lineas-morado.jpg">
+			</div>
+			<div class="interna" style="display:none;" data-flechas="derecha">
+				<div class="texto" style="left: 166px; top: 251px;"> 
+					<img src="img/01/img_01-texto.png">
+				</div>
+			</div>
+			<div class="interna" style="display:none;" data-flechas="ambas">
+				<div class="texto" style="left: 89px; top: 228px;"> 
+					<img src="img/01/img_02-texto.png">
+				</div>
+			</div>
+			<div class="interna" style="display:none;" data-flechas="">
+				<div class="texto" style="left: 300px; top: 20px;"> 
+					<img src="img/01/img_03-instruccion.png">
+				</div>
+				<div class="boton hover iniciar" style="left: 402px; top: 361px;"> 
+					<img src="img/btn_iniciar.png">
+					<img src="img/btn_iniciar_h.png" style="display:none;">
+				</div>
+			</div>
+			<div class="interna" style="display:none;" data-flechas="ambas">
+				<div class="texto" style="left: 89px; top: 176px;"> 
+					<img src="img/01/img_03-b-texto.png">
+				</div>
+			</div>
+
+			<div class="flechas-internas" style="top: 245px; position: absolute;">	  
+				<div class="derecha flecha" style="left: 910px; display:none;">
+			   		<img src="img/btn_seccion-sig.png">
+			  	</div>
+			  	<div class="izquierda flecha" style="left: -2px; display:none;">
+			   		<img src="img/btn_seccion-ant.png">
+			  	</div>
+			</div>
+        </div>
+
+
+		<div class="seccion mostrar-perfil" id="seccion0" data-audio="2">
+			<div class="fondo"> 
+				<img src="img/bg_ciudad-completa.jpg">
+			</div>
+			<div class="cuadro-texto slide" style="left: 185px; top: 78px;"> 
+				<div class="fondo">
+					<img src="img/01/img_04-cuadro-texto.png">
+				</div>
+			
+				<div class="textos" style="left: 33px; top: 16px;">
+					<div class="texto" style="" data-audio="">
+						<img src="img/01/img_04-texto-instruccion1.png">
+					</div>
+					<div class="texto" style="" data-audio="4"> 
+						<img src="img/01/img_04-texto-instruccion2.png">
+					</div>
+				</div>
+			
+				<div class="belissa" style="left: 248px; top: 166px;"> 
+					<img src="img/01/img_04-belissa.png">
+				</div>
+				
+				<div class="botones" style="top: 235px; left: 0px;">
+					<div class="boton siguiente" style="left: 373px;"> 
+						<img src="img/btn_slide-sig.png">
+					</div>
+					<div class="boton anterior" style="left: -5px;"> 
+						<img src="img/btn_slide-ant.png">
+					</div>
+				</div>
+				<div class="boton cerrar" style="top: -5px; left: 390px;">
+					<img src="img/btn_circulo-cerrar.png">
+					<div class="globo-x" style="left: 30px">
+						<img src="img/01/img_instruccion-globo-x.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="mostrar">
+				<div class="fondo"> 
+					<img src="img/bg_shadow-morado.png">
+				</div>
+				<div class="texto" style="left: 126px; top: 231px;"> 
+					<img src="img/01/img_05-b-titulo.png">
+				</div>
+			</div>
+    	</div>
+
+    	<div class="seccion mostrar-perfil" id="empecemos" data-audio="6">
+			<div class="fondo">
+				<img src="img/bg_ciudad.jpg">
+			</div>
+			<div class="cuadro-texto" style="left: 432px; top: 226px;"> 
+				<img src="img/01/img_05-cuadro-texto.png">
+				<div class="texto" style="left: 36px; top: 47px;"> 
+					<img src="img/01/img_05-texto-instruccion.png">
+				</div>
+			</div>
+			<div class="" style="left: 578px; top: 195px;"> 
+				<img src="img/01/img_05-belissa.png">
+			</div>
+			<div class="marcador" style="left: 170px; top: 170px; display:none;"> 
+				<img src="img/ciudad/img_casa-claudia_instruccion.png">
+				<div class="boton siguiente siguiente-diapositiva" style="left: 131px; top: 85px;"> 
+					<img src="img/btn_ciudad-ir.png">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="seccion mostrar-perfil" id="bienvenida-casa-claudia"  data-audio="7">
+			<div class="fondo"> 
+				<img src="img/bg_casa-claudia.jpg">
+			</div>
+			<div class="" style="left: 665px; top: 150px;"> 
+				<img src="img/01/img_06-belissa.png">
+				<div class="cuadro-texto" style="left: -182px; top: 1px;"> 
+					<img src="img/01/img_06-cuadro-texto.png">
+					<div class="texto" style="left: 41px; top: 44px;"> 
+						<img src="img/01/img_06-texto-instruccion.png">
+					</div>
+					<div class="boton cerrar" style="left: -5px; top: -6px; display:none;"> 
+						<img src="img/btn_circulo-cerrar.png">
+					</div>
+				</div>
+			</div>
+			<div class="boton comenzar siguiente-diapositiva mostrar" style="left: 526px; top: 140px; display:none;"> 
+				<img src="img/btn_actividad-empezar.png">
+			</div>
+		</div>
+
+		<div class="seccion mostrar-perfil sec_video" id="video1" >
+			<div class="fondo"> 
+				<img src="img/bg_video.jpg">
+			</div>
+			<div class="video-container">
+				<iframe id="frame_video_0" scrolling="no" data-video="1" src="video/1.html" width="746px" height="396px" style=""></iframe>
+			</div>
+		</div>
+
+	
+		<div class="seccion" id="imagina-meta" data-audio="10">
+			<div class="fondo"> 
+				<img src="img/bg_lineas-morado.jpg">
+			</div>
+			<div class="" style="left: 46px; top: 28px;"> 
+				<img src="img/01/img_07-titulos-suenos.png">
+			</div>
+			<div class="imagenes" style="top: -10px; left: -15px;">
+				<div class="imagen-meta" style="left: 369px; top: 57px;" data-sueno="casa"> 
+					<img src="img/01/img_07-sueno1.jpg">
+				</div>
+				<div class="imagen-meta" style="left: 613px; top: 57px;" data-sueno="compras-hijos"> 
+					<img src="img/01/img_07-sueno2.jpg">
+				</div>
+				<div class="imagen-meta" style="left: 117px; top: 230px;" data-sueno="negocio"> 
+					<img src="img/01/img_07-sueno3.jpg">
+				</div>
+				<div class="imagen-meta" style="left: 369px; top: 230px;" data-sueno="gusto"> 
+					<img src="img/01/img_07-sueno4.jpg">
+				</div>
+				<div class="imagen-meta" style="left: 613px; top: 230px;" data-sueno="educacion-hijos"> 
+					<img src="img/01/img_07-sueno5.jpg">
+				</div>
+				<div class="imagen-meta" style="left: 117px; top: 403px;" data-sueno="ahorro"> 
+					<img src="img/01/img_07-sueno6.jpg">
+				</div>
+				<div class="imagen-meta" style="left: 369px; top: 403px;" data-sueno="educacion"> 
+					<img src="img/01/img_07-sueno7.jpg">
+				</div>
+				<div class="imagen-meta" style="left: 613px; top: 403px;" data-sueno="viaje"> 
+					<img src="img/01/img_07-sueno8.jpg">
+				</div>
+			</div>
+
+			<div class="boton hover finalizar siguiente-diapositiva" style="top: 275px; left: 810px; display:none;">
+				<img src="img/btn_finalizar.png">
+				<img src="img/btn_finalizar_h.png" style="display:none;">
+			</div>
+
+			<div class="cuadro-texto slide" style="left: 344px; top: 148px;"> 
+				<img src="img/01/img_07-cuadro-texto.png">
+				<div class="belissa" style="left: 306px; top: 56px;"> 
+					<img src="img/01/img_07-belissa.png">
+				</div>
+				<div class="textos" style="left: 33px; top: 20px;">
+					<div class="texto" data-audio=""> 
+						<img src="img/01/img_07-texto-instruccion1.png">
+					</div>
+					<div class="texto" data-audio="11"> 
+						<img src="img/01/img_07-texto-instruccion2.png">
+					</div>
+				</div>
+				<div class="botones" style="top: 185px; left: 0px;">
+					<div class="boton siguiente" style="left: 343px;"> 
+						<img src="img/btn_slide-sig.png">
+					</div>
+					<div class="boton anterior" style="left: -5px;"> 
+						<img src="img/btn_slide-ant.png">
+					</div>
+				</div>
+				<div class="boton cerrar" style="top: -5px; left: 360px;">
+					<img src="img/btn_circulo-cerrar.png">
+				</div>
+			</div>
+
+
+			<div class="opciones" style="left: 0; top: 0;"> 
+				
+                <div class="fondo"> 
+					<img src="img/01/bg_07-shadowbox-azul.png">
+				</div>
+
+				<div class="opcion-sueno" data-sueno="casa">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno1-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Juego de sábanas y cubrecamas"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:31px;" data-boton="Una TV nueva"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:62px;" data-boton="Una lavadora nueva"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:93px;" data-boton="Materiales de construccion para ampliar mi casa"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:124px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="opcion-sueno" data-sueno="compras-hijos">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno2-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Pañales para tres meses"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:30px;" data-boton="Ropa nueva"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:59px;" data-boton="Una cuna o cama nueva"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:89px;" data-boton="Una bicicleta"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:120px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="opcion-sueno" data-sueno="negocio">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno3-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Pintar la fachada de mi tienda"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:31px;" data-boton="Una vitrina nueva"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:62px;" data-boton="Un letrero atractivo"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:93px;" data-boton="Más productos"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:124px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="opcion-sueno" data-sueno="gusto">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno4-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Comprar un teléfono móvil"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:31px;" data-boton="Hacerme un cambio de look"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:62px;" data-boton="Comprarme un vestido o ese accesorio que siempre quise"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:93px;" data-boton="Tener mis lentes(gafas) a la medida"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:124px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="opcion-sueno" data-sueno="educacion-hijos">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno5-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Inscribirlo en la guardería"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:31px;" data-boton="Pagar la mensualidad de la escuela"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:62px;" data-boton="Cancelar un ciclo de academia"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:93px;" data-boton="Inscribirlo en un curso de inglés"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:124px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="opcion-sueno" data-sueno="ahorro">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno6-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Tener un depósito para mis hijos"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:31px;" data-boton="Tener un dinero extra, ahorrar para algún imprevisto"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:62px;" data-boton="Juntar dinero para cuando sea mayor"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:93px;" data-boton="Ahorrar"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:124px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="opcion-sueno" data-sueno="educacion">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno7-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Pagarme un curso de cosmetología"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:30px;" data-boton="Pagar el total o parte de mi cuota de la universidad"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:60px;" data-boton="Estudiar inglés"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:90px;" data-boton="Estudiar computación"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:120px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="opcion-sueno" data-sueno="viaje">
+					<div class="texto" style="left: 345px; top: 175px;"> 
+						<img src="img/01/img_07-sueno8-opciones.png">
+					</div>
+
+					<div class="botones" style="top: 247px; left: 340px;"> 
+						<div class="boton" style="top:0px;" data-boton="Visitar a un familiar lejano"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:30px;" data-boton="Irme con mi familia un fin de semana fuera de la ciudad"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:60px;" data-boton="Conocer algún lugar dentro de mi país"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:90px;" data-boton="Hacer un viaje corto con mi esposo"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+						<div class="boton" style="top:120px;" data-boton="otro"> 
+							<img src="img/01/img_07-opcion.png">
+							<img src="img/01/img_07-opcion_a.png">
+						</div>
+					</div>
+				</div> 
+
+				<div class="boton guardar hover" style="display:none; top: 460px; left: 680px;">
+					<img src="img/btn_guardar.png">
+					<img src="img/btn_guardar_h.png" style="display:none;">
+				</div>
+
+				<div class="otro" style="display:none; top: 400px; left: 365px;">
+					<div class="fondo">
+						<img src="img/01/img_07-sueno-otra-opcion.png" alt="">
+					</div>
+					<input type="text" >
+				</div>
+
+				<div class="boton cerrar" style="display:none; top: 170px; left: 290px;">
+					<img src="img/btn_circulo-cerrar.png">
+				</div>
+
+			</div>
+		</div>
+
+		<div class="seccion estrellas felicitacion" id="felicitacion-1" data-flechas="derecha">
+			<div class="fondo"> 
+				<img src="img/bg_lineas-morado.jpg">
+			</div>
+			<div class="texto" data-felicitacion="si">
+				<div class="" style="left: 123px; top: 178px;"> 
+					<img src="img/estrellas/img_texto-felicitacion-actividad.png">
+				</div>
+				<div class="texto" style="left: 430px; top: 305px;">
+					<img src="img/estrellas/img_texto-felicitacion_1.png">
+				</div>
+			</div>
+			<span class="mi-meta-es" style=""></span>
+			<span class="nombre-consultora" style="">Nombre de la consultora</span>
+			<span class="estrellas-acumuladas" style="">00</span>
+		</div>
+
+
+		<div class="seccion mostrar-perfil" id="dirigete-casa" data-audio="21">
+			<div class="fondo"> 
+				<img src="img/bg_ciudad.jpg">
+			</div>
+			<div class="cuadro-texto" style="top: 230px; left: 440px;"> 
+				<div class="fondo" style="top: -70px; left: -100px;"> 
+					<img src="img/01/img_08-cuadro-texto.png">
+				</div>
+				<div class="texto" style="left: -80px; top: -15px;"> 
+					<img src="img/01/img_08-texto-instruccion.png">
+				</div>
+				<div class="boton cerrar" style="left: 110px; top: -75px; display:none;"> 
+					<img src="img/btn_circulo-cerrar.png">
+				</div>
+				<div class="belissa" style="left: 0; top: 0;"> 
+					<img src="img/01/img_08-belissa.png">
+				</div>
+			</div>
+			<div class="mostrar" style="left: 335px; top: 330px;"> 
+				<img src="img/ciudad/img_tu-casa.png">
+				<div class="boton iniciar siguiente-diapositiva" style="left: 131px; top: 34px;"> 
+					<img src="img/btn_ciudad-ir.png">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="seccion mostrar-perfil" id="click-calculadora" data-audio="22">
+			<div class="fondo"> 
+				<img src="img/bg_tu-casa.jpg">
+			</div>
+			<div class="instruccion" style="left: 491px; top: 192px;">
+				<div class="cuadro-texto" style=" "> 
+					<img src="img/01/img_09-cuadro-texto.png">
+					<div class="texto" style="left: 15px; top: 21px;"> 
+						<img src="img/01/img_09-texto-instruccion.png">
+					</div>
+					<div class="boton cerrar" style="left: 231px; top: -8px; display:none;"> 
+						<img src="img/btn_circulo-cerrar.png">
+					</div>
+				</div>
+				<div class="belissa" style="left: 210px; top: 20px;"> 
+					<img src="img/01/img_09-belissa.png">
+				</div>
+			</div>
+			<div class="mostrar boton siguiente-diapositiva" style="left: 753px; top: 179px;"> 
+				<img src="img/btn_actividad-empezar.png">
+			</div>
+		</div>
+
+		<div class="seccion" id="calculadora">
+			<div class="fondo"> 
+				<img src="img/bg_lineas-morado.jpg">
+			</div>
+			<div class="interna">
+				<div class="fondo" style="top: 50px; left: 70px;"> 
+					<img src="img/01/img_10-cuadro-texto.png">
+				</div>
+				<div class="texto" style="left: 387px; top: 191px;"> 
+					<img src="img/01/img_10_01-texto-instruccion.png">
+				</div>
+				<div class="banderas">
+                
+					<div class="bandera boton hover" data-pais="no" style="left: -8px; top: -12px;">
+						<img src="img/01/banderas/btn_bandera-1.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-1_h.png" style="display: none;">
+					</div>
+					<div class="bandera boton hover" data-pais="no" style="left: 48px; top: -12px;">
+						<img src="img/01/banderas/btn_bandera-2.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-2_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 103px; top: -12px;">
+						<img src="img/01/banderas/btn_bandera-3B.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-3B_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 160px; top: -12px;">
+						<img src="img/01/banderas/btn_bandera-4.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-4_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 220px; top: -12px;">
+						<img src="img/01/banderas/btn_bandera-5.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-5_h.png" style="display: none;">
+					</div>
+                    
+                    
+                    
+                    
+                    
+
+					<div class="bandera boton hover" data-pais="no" style="left: -8px; top: 46px;">
+						<img src="img/01/banderas/btn_bandera-6.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-6_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 48px; top: 46px;">
+						<img src="img/01/banderas/btn_bandera-7.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-7_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 103px; top: 46px;">
+						<img src="img/01/banderas/btn_bandera-8.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-8_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 160px; top: 46px;">
+						<img src="img/01/banderas/btn_bandera-9.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-9_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="si" style="left: 220px; top: 46px;">
+						<img src="img/01/banderas/btn_bandera-10.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-10_h.png" style="display: none;">
+					</div>
+                    
+                    
+                    
+                    
+                    
+
+					<div class="bandera boton hover" data-pais="no" style="left: -8px; top: 107px;">
+						<img src="img/01/banderas/btn_bandera-11.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-11_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 48px; top: 107px;">
+						<img src="img/01/banderas/btn_bandera-12.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-12_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 103px; top: 107px;">
+						<img src="img/01/banderas/btn_bandera-13.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-13_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 160px; top: 107px;">
+						<img src="img/01/banderas/btn_bandera-14.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-14_h.png" style="display: none;">
+					</div>
+
+					<div class="bandera boton hover" data-pais="no" style="left: 220px; top: 107px;">
+						<img src="img/01/banderas/btn_bandera-15.png" style="display: block;">
+						<img src="img/01/banderas/btn_bandera-15_h.png" style="display: none;">
+					</div>
+                    
+                    
+                    
+				</div>
+			</div>
+			<div class="interna" data-flechas="izquierda">
+				<div class="fondo" style="top: 50px; left: 70px;"> 
+					<img src="img/01/img_10-cuadro-texto.png">
+				</div>
+				<div class="texto" style="left: 110px; top: 81px;"> 
+					<img src="img/01/img_10-titulo.png">
+				</div>
+				<div class="cuadro-texto" style="left: 299px; top: 194px;"> 
+					<img src="img/01/img_10_01-cuadro-cifra-meta.png">
+					<input id="cifra-meta" type="text">
+				</div>
+				<div class="boton hover resultado" style="top: 400px; left: 520px; display:none;">
+					<img src="img/btn_resultado.png">
+					<img src="img/btn_resultado_h.png" style="display:none;">
+				</div>
+			</div>
+			<div class="interna" data-flechas="">
+				<div class="fondo" style="top: 50px; left: 70px;"> 
+					<img src="img/01/img_10-cuadro-texto.png">
+				</div>
+				<div class="texto" style="top: 175px; left: 100px;">
+					<img src="img/01/img_10_02-texto-instruccion.png">
+				</div>
+				<div class="cuadro-texto" style="left: 479px; top: 155px;"> 
+					<img src="img/01/img_10_01-cuadro-pedido-campana.png">
+					<span id="pedido-campana"></span>
+				</div>
+			</div>
+
+			<div class="flechas-internas" style="top: 245px; position: absolute;">	  
+				<div class="derecha flecha" style="left: 910px; display:none;">
+			   		<img src="img/btn_seccion-sig.png">
+			  	</div>
+			  	<div class="izquierda flecha" style="left: -2px; display:none;">
+			   		<img src="img/btn_seccion-ant.png">
+			  	</div>
+			</div>		
+		</div>
+
+		<div class="seccion estrellas felicitacion" id="felicitacion-2" data-flechas="derecha">
+			<div class="fondo"> 
+				<img src="img/bg_lineas-morado.jpg">
+			</div>
+			<div class="texto" data-felicitacion="si">
+				<div class="" style="left: 123px; top: 178px;"> 
+					<img src="img/estrellas/img_texto-felicitacion-actividad.png">
+				</div>
+				<div class="texto" style="left: 430px; top: 305px;">
+					<img src="img/estrellas/img_texto-felicitacion_2.png">
+				</div>
+			</div>
+			<span class="nombre-consultora" style="">Nombre de la consultora</span>
+			<span class="estrellas-acumuladas" style="">00</span>
+		</div>
+
+		<div class="seccion estrellas felicitacion" id="felicitacion-mod-1" data-flechas="">
+			<div class="fondo"> 
+				<img src="img/bg_lineas-morado.jpg">
+			</div>
+			<div class="texto" data-felicitacion="si">
+				<div class="" style="left: 123px; top: 207px;"> 
+					<img src="img/estrellas/img_texto-felicitacion-modulo.png">
+				</div>
+				<div class="texto" style="left: 430px; top: 180px;">
+					<img src="img/estrellas/img_texto-felicitacion-modulo_1.png">
+				</div>
+			</div>
+			<span class="estrellas-acumuladas" style="">00</span>
+            
+            
+            <div id="terminarCurso" class="" style="left: 910px; top: 245px;">
+	   			<img src="img/btn_seccion-sig.png">
+	  		</div>
+            
+		</div>
+        
+        
+        <div class="seccion" style="background-color:#990099; z-index:900;" data-audio=""></div>
+
+    </div>
+    
+    
+    
+    
+    <div id="flechas" style="top: 245px; position: absolute;">	  
+		<div id="derecha" class="flecha" style="left: 910px; display:none;">
+	   		<img src="img/btn_seccion-sig.png">
+	  	</div>
+	  	<div id="izquierda" class="flecha" style="left: -2px; display:none;">
+	   		<img src="img/btn_seccion-ant.png">
+	  	</div>
+	</div>
+
+    <!-- Secciones -->
+</div>
+
+
+<script src="t.js" type="text/javascript"></script>
+<div id="pano" style="width:1px; height:1px;position:absolute; z-index:1000"></div>
+<script>
+	// <![CDATA[
+	var viewer = createPanoViewer({swf:"t.swf", id:"krpanoSWFObject", target:"pano"});
+	// set the default xml file
+	viewer.addVariable("xml", "t.xml");
+	// pass all parameters from the html file to the viewer
+	viewer.passQueryParameters();
+	// embed and start the viewer
+	viewer.embed();
+	function playSong(intt)
+	{
+		var krpano = document.getElementById("krpanoSWFObject");
+		if (!krpano || !krpano.get)
+		{
+			return "";
+		}
+		krpano.call("playSong(" + intt + ");");
+	}
+	function stopSong(){
+		var krpano = document.getElementById("krpanoSWFObject");
+		if (!krpano || !krpano.get)
+		{
+			return "";
+		}
+		krpano.call("stopSong();");
+	}
+	
+// ]]>
+</script>
+
+
+</body>
+</html>
